@@ -6,6 +6,8 @@ notes.forEach(function(element){
     var title = document.createTextNode(element.title);
     header.appendChild(title);
     acc.appendChild(header);
+    //Add remove option
+
 
     var content = document.createElement("div");
     var contentText = document.createTextNode(element.content);

@@ -35,10 +35,14 @@
                 </div>
                 <div id="notebook">
                     <h2>Notatki</h2>
-                    Tytuł:<input type="text" name="title"/><br/>
-                    Treść:<input type="text" name="con"/>
-                    <button name="submit" onclick="AddNote()"/>
-                    <input type="submit"/>
+                    Tytuł:<input type="text" name="title" title="Tutaj wprowadź tyłuł swojej notatki"/><br/>
+                    Treść:<input type="text" name="con" title="Tutaj wprowadź treść swojej notatki"/>
+                    <button name="submit" onclick="AddNote()" title="Kliknij tutaj aby zapisać notatkę">
+                        Zapisz
+                    </button>
+                    <button name="clear" onclick="ClearForm()" title="Kliknij tutaj aby wyczyścić formularz">
+                        Wyczyść
+                    </button>
 
                 </div>
                 <div id="accordion">
