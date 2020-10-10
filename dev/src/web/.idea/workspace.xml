@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2304394-1d6e-44e0-9828-b06e258df32c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1igMYcTAbY3izEZddXpe1MBaKLM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mabat\Desktop\WAI\dev\src\web\scripts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2304394-1d6e-44e0-9828-b06e258df32c" name="Default Changelist" comment="" />
+      <created>1602324829298</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602324829298</updated>
+      <workItem from="1602324831766" duration="1400000" />
+      <workItem from="1602331540411" duration="9462000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2777" y="-713" key="#JSHint" timestamp="1602342004714">
+      <screen x="1920" y="-1045" width="2560" height="1409" />
+    </state>
+    <state x="2777" y="-713" key="#JSHint/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602342004714" />
+    <state x="2702" y="-696" key="SettingsEditor" timestamp="1602331774590">
+      <screen x="1920" y="-1045" width="2560" height="1409" />
+    </state>
+    <state x="2702" y="-696" key="SettingsEditor/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602331774590" />
+    <state x="2863" y="-727" width="672" height="678" key="search.everywhere.popup" timestamp="1602333333020">
+      <screen x="1920" y="-1045" width="2560" height="1409" />
+    </state>
+    <state x="2863" y="-727" width="672" height="678" key="search.everywhere.popup/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602333333020" />
+  </component>
+</project>
