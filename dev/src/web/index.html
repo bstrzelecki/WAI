@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="base.css">
-
+    <link href="jQuery/jquery-ui.css" rel="stylesheet">
+    <script src="scripts/ls.js"></script>
 </head>
 <body>
     <div id="container">
@@ -34,11 +35,16 @@
                 </div>
                 <div id="notebook">
                     <h2>Notatki</h2>
-                    Tytuł:<input type="text" name="title">
-                    Treść:<input type="text" name="con">
-                    <button name="submit" onclick="">
-                    <input type="submit">
+                    Tytuł:<input type="text" name="title"/><br/>
+                    Treść:<input type="text" name="con"/>
+                    <button name="submit" onclick="AddNote()"/>
+                    <input type="submit"/>
+
                 </div>
+                <div id="accordion">
+
+                </div>
+                <script src="scripts/noteLoader.js"></script>
             </div>
 
         </aside>
@@ -64,7 +70,11 @@
         </footer>
     </div>
 
-
+    <script src="jQuery/external/jquery/jquery.js"></script>
+    <script src="jQuery/jquery-ui.js"></script>
+    <script>
+        $( "#accordion" ).accordion();
+    </script>
 
 </body>
 </html>
