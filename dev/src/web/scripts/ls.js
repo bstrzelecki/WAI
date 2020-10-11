@@ -3,9 +3,11 @@ function AddNote(){
     const content = document.getElementsByName("con")[0].value;
 
     if(title === "" || content === ""){
-        //Draw dialog box
-        console.log("fields must not be empty");
-        return;
+        document.getElementById("dialog").style.display = "contents";
+        $( "#dialog" ).dialog({
+            resizable: false
+        });
+        return false;
     }
 
     const arr = [{"title":title, "content":content}];
@@ -24,17 +26,17 @@ function ClearForm(){
     document.getElementsByName("con")[0].value = "";
 }
 function ReloadNotes(){
-    var acc = document.getElementById("accordion");
+    const acc = document.getElementById("accordion");
     acc.innerHTML = "";
 
     const notes = JSON.parse(localStorage.getItem("notes"));
     if(notes == null)return;
-    var i = 0;
+    let i = 0;
     notes.forEach(function(element){
-        var header = document.createElement("h3");
-        var title = document.createTextNode(element.title);
+        const header = document.createElement("h3");
+        const title = document.createTextNode(element.title);
 
-        var btn = document.createElement("button");
+        const btn = document.createElement("button");
         btn.setAttribute("onclick", "RemoveNote("+JSON.stringify(i++)+")");
         btn.innerHTML = "X";
 
@@ -43,8 +45,8 @@ function ReloadNotes(){
         acc.appendChild(header);
 
 
-        var content = document.createElement("div");
-        var contentText = document.createTextNode(element.content);
+        let content = document.createElement("div");
+        let contentText = document.createTextNode(element.content);
         content.appendChild(contentText);
         acc.appendChild(content);
     });
@@ -55,4 +57,31 @@ function RemoveNote(id){
     data.splice(id,1);
     localStorage.setItem("notes", JSON.stringify(data));
     ReloadNotes();
+}
+function GreetUser(){
+    if(sessionStorage.getItem("hasBeenGreeted") === "true")return;
+    document.getElementById("greeter").style.display = "contents";
+    $( "#greeter" ).dialog({
+        resizable: false
+    });
+    sessionStorage.setItem("hasBeenGreeted", "true");
+}
+
+var time;
+function InitializeClock(){
+    time = JSON.parse(sessionStorage.getItem("startTime"));
+    if(time === null){
+        time = new Date().getTime();
+        sessionStorage.setItem("startTime", JSON.stringify(time));
+    }
+
+    Tick();
+}
+function Tick(){
+    let date = new Date(new Date().getTime() - time);
+    let s = JSON.stringify(date.getSeconds());toString()
+    let m = JSON.stringify(date.getMinutes());
+    let h = JSON.stringify(date.getHours() - 1);
+    document.getElementById("clock").innerHTML = h+":"+(m < 10?"0":"")+m+":"+(s < 10?"0":"")+s;
+    setTimeout(Tick, 500);
 }

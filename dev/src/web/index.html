@@ -8,6 +8,11 @@
     <link href="jQuery/jquery-ui.css" rel="stylesheet">
     <link href="jQuery/external/jquery/jquery.js" rel="script">
     <script src="scripts/ls.js"></script>
+    <noscript>
+        <style>
+            .hide-when-scripts-disabled {display:none;}
+        </style>
+    </noscript>
 </head>
 <body>
     <div id="container">
@@ -34,19 +39,16 @@
                         OptionD
                     </div>
                 </div>
-                <div id="notebook">
+                <div id="notebook" class="hide-when-scripts-disabled" >
                     <h2>Notatki</h2>
-                    Tytuł:<input type="text" name="title" title="Tutaj wprowadź tyłuł swojej notatki"/><br/>
-                    Treść:<input type="text" name="con" title="Tutaj wprowadź treść swojej notatki"/><br/>
-                    <button name="submit" onclick="AddNote()" title="Kliknij tutaj aby zapisać notatkę">
-                        Zapisz
-                    </button>
-                    <button name="clear" onclick="ClearForm()" title="Kliknij tutaj aby wyczyścić formularz">
-                        Wyczyść
-                    </button>
-
+                    <form onsubmit="AddNote();return false;">
+                        Tytuł:<input type="text" name="title" title="Tutaj wprowadź tyłuł swojej notatki"/><br/>
+                        Treść:<input type="text" name="con" title="Tutaj wprowadź treść swojej notatki"/><br/>
+                        <input type="submit" value="Zapisz" title="Kliknij tutaj aby zapisać notatkę"/>
+                        <input type="reset" value="Wyczyść" title="Kliknij tutaj aby wyczyścić formularz">
+                    </form>
                 </div>
-                <div id="accordion">
+                <div id="accordion" class="hide-when-scripts-disabled">
 
                 </div>
 
@@ -55,7 +57,9 @@
         </aside>
         <article>
             <div id="content">
+                <h2>The...</h2>
                 <p class="content-text">
+
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat, ipsum vel euismod consequat, enim ligula hendrerit mauris, vitae pharetra lacus turpis ac felis. Etiam a elementum erat. Maecenas tristique libero velit, ac rutrum metus consectetur sed. Donec vel efficitur risus. Nam vulputate sodales ligula, eu aliquet neque tempor et. Nunc viverra, nisi et vulputate posuere, lorem erat molestie nunc, ac tristique arcu magna ac turpis. Suspendisse lacinia quis sapien sit amet consectetur. Donec sodales venenatis volutpat. Nulla eu cursus tellus. Aenean id tellus ac metus faucibus lobortis ut vitae enim. Praesent tempus non orci nec laoreet. Pellentesque eget dui ligula. Pellentesque ultrices faucibus elementum.
 
                     Proin ullamcorper eros ut odio posuere, in consequat augue porta. Nam non urna sodales, lacinia felis in, luctus turpis. Sed vulputate neque vitae metus egestas, vel dignissim ex pellentesque. Donec augue turpis, scelerisque sit amet purus in, pellentesque tempor lectus. Aliquam erat volutpat. Donec leo ex, rhoncus id magna id, eleifend varius magna. Phasellus ac erat gravida, convallis eros quis, rhoncus est. Nulla et est ullamcorper, vulputate metus a, pulvinar dui. Nunc aliquam egestas nulla eget egestas. In vitae urna pulvinar, aliquet risus et, suscipit nunc. Aenean auctor lacinia nisi eget imperdiet. Curabitur feugiat urna eu diam vulputate condimentum. Integer fringilla velit id mauris laoreet dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut viverra lorem, a maximus ante. Nulla commodo eleifend libero sit amet luctus.
@@ -70,9 +74,17 @@
         </article>
         <footer>
             <div id="ft">
-                Made by Bartosz Strzelecki 2020
+                <span class="hide-when-scripts-disabled">Czas trwania sesji: <span id="clock"></span></span>
+                <span>Made by Bartosz Strzelecki 2020</span>
             </div>
         </footer>
+    </div>
+
+    <div id="dialog" style="display: none" title="Błąd">
+        <p>Pola formularza nie mogą być puste.</p>
+    </div>
+    <div id="greeter" style="display: none" title="Witaj">
+        <p>Greetings!</p>
     </div>
 
     <script src="jQuery/external/jquery/jquery.js"></script>
@@ -80,6 +92,10 @@
     <script>
         $( "#accordion" ).accordion();
     </script>
-    <script>ReloadNotes()</script>
+    <script>
+        GreetUser();
+        ReloadNotes();
+        InitializeClock();
+    </script>
 </body>
 </html>

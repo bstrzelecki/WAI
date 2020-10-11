@@ -8,7 +8,7 @@
  *
  * http://api.jqueryui.com/category/theming/
  *
- * To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=&folderName=custom-theme&bgImgOpacityError=&bgImgOpacityHighlight=&bgImgOpacityActive=&bgImgOpacityHover=&bgImgOpacityDefault=&bgImgOpacityContent=&bgImgOpacityHeader=&cornerRadiusShadow=8px&offsetLeftShadow=0px&offsetTopShadow=0px&thicknessShadow=5px&opacityShadow=30&bgImgOpacityShadow=0&bgTextureShadow=flat&bgColorShadow=%23666666&opacityOverlay=30&bgImgOpacityOverlay=0&bgTextureOverlay=flat&bgColorOverlay=%23aaaaaa&iconColorError=%23cc0000&fcError=%235f3f3f&borderColorError=%23f1a899&bgTextureError=flat&bgColorError=%23fddfdf&iconColorHighlight=%23777620&fcHighlight=%23777620&borderColorHighlight=%23dad55e&bgTextureHighlight=flat&bgColorHighlight=%23fffa90&iconColorActive=%23ffffff&fcActive=%23ffffff&borderColorActive=%23000000&bgTextureActive=flat&bgColorActive=darkorange&iconColorHover=%23555555&fcHover=%232b2b2b&borderColorHover=%23cccccc&bgTextureHover=flat&bgColorHover=%23ededed&iconColorDefault=%23777777&fcDefault=%23454545&borderColorDefault=%23c5c5c5&bgTextureDefault=flat&bgColorDefault=orange&iconColorContent=%23444444&fcContent=%23ffffff&borderColorContent=%23000000&bgTextureContent=flat&bgColorContent=%23b96114&iconColorHeader=%23444444&fcHeader=%23333333&borderColorHeader=%23570000&bgTextureHeader=flat&bgColorHeader=%23ffffff&cornerRadius=3px&fwDefault=normal&fsDefault=1em&ffDefault=Arial%2CHelvetica%2Csans-serif
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=&folderName=custom-theme&bgImgOpacityHeader=&bgImgOpacityContent=&bgImgOpacityDefault=&bgImgOpacityHover=&bgImgOpacityActive=&bgImgOpacityHighlight=&bgImgOpacityError=&cornerRadiusShadow=8px&offsetLeftShadow=0px&offsetTopShadow=0px&thicknessShadow=5px&opacityShadow=30&bgImgOpacityShadow=0&bgTextureShadow=flat&bgColorShadow=%23666666&opacityOverlay=30&bgImgOpacityOverlay=0&bgTextureOverlay=flat&bgColorOverlay=%23aaaaaa&iconColorError=%23cc0000&fcError=%235f3f3f&borderColorError=%23f1a899&bgTextureError=flat&bgColorError=%23fddfdf&iconColorHighlight=%23777620&fcHighlight=%23777620&borderColorHighlight=%23dad55e&bgTextureHighlight=flat&bgColorHighlight=%23fffa90&iconColorActive=%23ffffff&fcActive=%23ffffff&borderColorActive=%23000000&bgTextureActive=flat&bgColorActive=darkorange&iconColorHover=%23555555&fcHover=%232b2b2b&borderColorHover=black&bgTextureHover=flat&bgColorHover=darkorange&iconColorDefault=%23777777&fcDefault=%23454545&borderColorDefault=black&bgTextureDefault=flat&bgColorDefault=orange&iconColorContent=%23444444&fcContent=%23ffffff&borderColorContent=%23000000&bgTextureContent=flat&bgColorContent=%23b96114&iconColorHeader=%23444444&fcHeader=%23333333&borderColorHeader=%23570000&bgTextureHeader=flat&bgColorHeader=orange&cornerRadius=3px&fwDefault=normal&fsDefault=1em&ffDefault=Arial%2CHelvetica%2Csans-serif
  */
 
 
@@ -29,7 +29,7 @@
 	font-size: 1em;
 }
 .ui-widget.ui-widget-content {
-	border: 1px solid #c5c5c5;
+	border: 1px solid black;
 }
 .ui-widget-content {
 	border: 1px solid #000000;
@@ -41,7 +41,7 @@
 }
 .ui-widget-header {
 	border: 1px solid #570000;
-	background: #ffffff;
+	background: orange;
 	color: #333333;
 	font-weight: bold;
 }
@@ -60,7 +60,7 @@
 works properly when clicked or hovered */
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
-	border: 1px solid #c5c5c5;
+	border: 1px solid black;
 	background: orange;
 	font-weight: normal;
 	color: #454545;
@@ -83,8 +83,8 @@ a:visited.ui-button,
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-	border: 1px solid #cccccc;
-	background: #ededed;
+	border: 1px solid black;
+	background: darkorange;
 	font-weight: normal;
 	color: #2b2b2b;
 }
