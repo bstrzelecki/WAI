@@ -6,6 +6,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="base.css">
     <link href="jQuery/jquery-ui.css" rel="stylesheet">
+    <link href="jQuery/external/jquery/jquery.js" rel="script">
     <script src="scripts/ls.js"></script>
 </head>
 <body>
@@ -36,7 +37,7 @@
                 <div id="notebook">
                     <h2>Notatki</h2>
                     Tytuł:<input type="text" name="title" title="Tutaj wprowadź tyłuł swojej notatki"/><br/>
-                    Treść:<input type="text" name="con" title="Tutaj wprowadź treść swojej notatki"/>
+                    Treść:<input type="text" name="con" title="Tutaj wprowadź treść swojej notatki"/><br/>
                     <button name="submit" onclick="AddNote()" title="Kliknij tutaj aby zapisać notatkę">
                         Zapisz
                     </button>
@@ -48,7 +49,7 @@
                 <div id="accordion">
 
                 </div>
-                <script src="scripts/noteLoader.js"></script>
+
             </div>
 
         </aside>
@@ -79,6 +80,6 @@
     <script>
         $( "#accordion" ).accordion();
     </script>
-
+    <script>ReloadNotes()</script>
 </body>
 </html>
