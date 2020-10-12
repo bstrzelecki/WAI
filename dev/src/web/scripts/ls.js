@@ -36,8 +36,10 @@ function ReloadNotes(){
         const header = document.createElement("h3");
         const title = document.createTextNode(element.title);
 
+        header.style.overflowX = "auto";
         const btn = document.createElement("button");
         btn.setAttribute("onclick", "RemoveNote("+JSON.stringify(i++)+")");
+        btn.className = "btn";
         btn.innerHTML = "X";
 
         header.appendChild(title);
@@ -83,5 +85,24 @@ function Tick(){
     let m = JSON.stringify(date.getMinutes());
     let h = JSON.stringify(date.getHours() - 1);
     document.getElementById("clock").innerHTML = h+":"+(m < 10?"0":"")+m+":"+(s < 10?"0":"")+s;
-    setTimeout(Tick, 500);
+    setTimeout(Tick, 1000);
+}
+function SwapTextSize(){
+    let size = sessionStorage.getItem("size");
+    if(size===null){
+        size = "medium";
+    }
+    size = size === "medium"?"x-large":"medium";
+    sessionStorage.setItem("size", size);
+    SetTextSize();
+}
+function SetTextSize(){
+    let size = sessionStorage.getItem("size");
+    if(size===null){
+        size = "medium";
+    }
+    const content = document.getElementById("contentParagraph");
+    document.getElementById("textSwapBtn").innerText = size === "medium"?"A":"a";
+    if (content===null)return;
+    content.style.fontSize = size;
 }

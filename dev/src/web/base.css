@@ -2,6 +2,9 @@
 body{
     background: black;
 }
+a{
+    text-decoration: none;
+}
 .nav-option{
     width: auto;
     padding: 5px;
@@ -16,6 +19,35 @@ div{
     background: orange;
     color: white;
 }
+#noteForm{
+    text-align: right;
+}
+#gallery{
+    display: flex;
+    justify-content: center;
+}
+#title{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background: darkorange;
+    color: white;
+    border: black;
+    font-size: large;
+    padding: 3px;
+    margin: 1px;
+}
+.btn:hover{
+    background: lightsalmon;
+}
+.text-box{
+    background: orange;
+    border-color: #b96114;
+    color:white;
+    padding: 2px;
+    margin: 2px;
+}
 #left-panel{
     width: 192px;
     height: 100%;
@@ -27,7 +59,11 @@ div{
     margin-bottom: -10px;
 }
 #notebook{
+    text-align: center;
     margin-bottom: -5px;
+}
+.content-text{
+    font-size: medium;
 }
 #content{
     width: 738px;
@@ -72,5 +108,8 @@ div{
     }
     #container{
         width: 100%;
+    }
+    #noteForm{
+        text-align: center;
     }
 }

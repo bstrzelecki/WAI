@@ -19,33 +19,42 @@
         <header >
             <div id="title">
                 <h1>
-                    Lorem ipsum...
+                    Podróżowanie - Moje hobby
                 </h1>
+                <button class="btn hide-when-scripts-disabled" id="textSwapBtn" onclick="SwapTextSize()">A</button>
             </div>
         </header>
         <aside>
             <div id="left-panel">
                 <div id="navigation">
-                    <div class="nav-option">
-                        OptionA
-                    </div>
-                    <div class="nav-option">
-                        OptionB
-                    </div>
-                    <div class="nav-option">
-                        OptionC
-                    </div>
-                    <div class="nav-option">
-                        OptionD
-                    </div>
+                    <a href="index.html">
+                        <div class="nav-option">
+                            Strona główna
+                        </div>
+                    </a>
+                    <a href="events.html">
+                        <div class="nav-option">
+                            Nadchodzące wydarzenia
+                        </div>
+                    </a>
+                    <a href="places.html">
+                        <div class="nav-option">
+                            Interesujące miejsca
+                        </div>
+                    </a>
+                    <a href="gallery.html">
+                        <div class="nav-option">
+                            Galeria
+                        </div>
+                    </a>
                 </div>
                 <div id="notebook" class="hide-when-scripts-disabled" >
                     <h2>Notatki</h2>
-                    <form onsubmit="AddNote();return false;">
-                        Tytuł:<input type="text" name="title" title="Tutaj wprowadź tyłuł swojej notatki"/><br/>
-                        Treść:<input type="text" name="con" title="Tutaj wprowadź treść swojej notatki"/><br/>
-                        <input type="submit" value="Zapisz" title="Kliknij tutaj aby zapisać notatkę"/>
-                        <input type="reset" value="Wyczyść" title="Kliknij tutaj aby wyczyścić formularz">
+                    <form id="noteForm" onsubmit="AddNote();return false;">
+                        <label for="noteTitle">Tytuł:</label><input type="text" id="noteTitle" name="title" class="text-box" title="Tutaj wprowadź tyłuł swojej notatki"/><br/>
+                        <label for="noteContent">Treść:</label><input type="text" id="noteContent" name="con" class="text-box" title="Tutaj wprowadź treść swojej notatki"/><br/>
+                        <input type="submit" class="btn" value="Zapisz" title="Kliknij tutaj aby zapisać notatkę"/>
+                        <input type="reset" class="btn" value="Wyczyść" title="Kliknij tutaj aby wyczyścić formularz">
                     </form>
                 </div>
                 <div id="accordion" class="hide-when-scripts-disabled">
@@ -57,18 +66,9 @@
         </aside>
         <article>
             <div id="content">
-                <h2>The...</h2>
-                <p class="content-text">
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat, ipsum vel euismod consequat, enim ligula hendrerit mauris, vitae pharetra lacus turpis ac felis. Etiam a elementum erat. Maecenas tristique libero velit, ac rutrum metus consectetur sed. Donec vel efficitur risus. Nam vulputate sodales ligula, eu aliquet neque tempor et. Nunc viverra, nisi et vulputate posuere, lorem erat molestie nunc, ac tristique arcu magna ac turpis. Suspendisse lacinia quis sapien sit amet consectetur. Donec sodales venenatis volutpat. Nulla eu cursus tellus. Aenean id tellus ac metus faucibus lobortis ut vitae enim. Praesent tempus non orci nec laoreet. Pellentesque eget dui ligula. Pellentesque ultrices faucibus elementum.
-
-                    Proin ullamcorper eros ut odio posuere, in consequat augue porta. Nam non urna sodales, lacinia felis in, luctus turpis. Sed vulputate neque vitae metus egestas, vel dignissim ex pellentesque. Donec augue turpis, scelerisque sit amet purus in, pellentesque tempor lectus. Aliquam erat volutpat. Donec leo ex, rhoncus id magna id, eleifend varius magna. Phasellus ac erat gravida, convallis eros quis, rhoncus est. Nulla et est ullamcorper, vulputate metus a, pulvinar dui. Nunc aliquam egestas nulla eget egestas. In vitae urna pulvinar, aliquet risus et, suscipit nunc. Aenean auctor lacinia nisi eget imperdiet. Curabitur feugiat urna eu diam vulputate condimentum. Integer fringilla velit id mauris laoreet dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut viverra lorem, a maximus ante. Nulla commodo eleifend libero sit amet luctus.
-
-                    Cras non dictum elit. Nullam at tincidunt nulla. Mauris posuere sit amet turpis sit amet suscipit. Donec tortor quam, hendrerit ac posuere a, malesuada non erat. In accumsan justo enim. Vivamus et sapien dictum, convallis ipsum sit amet, dapibus massa. Vivamus quis lorem a massa luctus convallis. Suspendisse sagittis pulvinar libero, a rutrum augue pretium eget. Aenean a tellus consequat, ultrices lorem in, venenatis mauris. Vestibulum quis fringilla leo. Proin magna nulla, vestibulum venenatis ligula sed, cursus facilisis tortor. Nulla nec porttitor neque, et interdum erat. Donec id aliquam ligula, ac hendrerit nibh. Sed augue urna, vehicula non velit id, blandit aliquet felis. Nullam sit amet massa ligula. Curabitur gravida, lacus non consequat viverra, ante sem ultrices quam, et aliquam lectus nisi vitae leo.
-
-                    Donec in nunc sed nibh auctor auctor. Integer feugiat ac nisl eu porta. Maecenas euismod bibendum erat, ac vehicula purus posuere vitae. Aenean at venenatis mauris. Nunc pretium, libero id luctus molestie, libero velit porta turpis, eu fermentum neque elit a leo. Praesent porta varius enim, a rutrum quam varius a. Donec viverra dapibus leo, non ultrices turpis lobortis quis. Ut sodales erat quis dui sagittis, ut rutrum quam gravida. Nulla consequat sem posuere, fermentum turpis tempus, scelerisque justo.
-
-                    Duis tempor rhoncus ligula, at pretium turpis facilisis sit amet. Sed condimentum congue leo, nec tempus nibh. Nam commodo varius sem, mattis mollis erat pulvinar ut. Integer sit amet arcu sit amet nunc feugiat luctus nec sit amet ipsum. Curabitur sagittis, quam sit amet feugiat sollicitudin, diam dolor iaculis nibh, non vulputate nibh lectus non orci. Nulla laoreet metus tortor, in maximus nibh vehicula quis. Integer sed nisi pharetra, malesuada enim ac, laoreet libero. Sed pharetra dolor eu turpis ultricies, eget varius leo feugiat. Aliquam molestie leo diam, vel ullamcorper ipsum bibendum sed.
+                <h2>Podróżowanie jako hobby...</h2>
+                <p class="content-text" id="contentParagraph">
+                    Podróżowanie jako hobby mogą wybrać nie tylko osoby, które mają duży zasób gotówki. Obecnie istnieje wiele możliwości, by podróżować nie nadwyrężając znacznie portfela. Pasjonaci nie mogą teraz powiedzieć, że chociaż kochają podróżować, nie mogą tego zrobić ze względu na brak pieniędzy. Podróżowanie jako hobby i sposób spędzania czasu wolnego narodziło się w Anglii. Anglicy zawsze byli zwolennikami podróży i chętnie przemieszczali się z miejsca na miejsce, by poznawać, doświadczać, zmieniać otoczenie. Nic więc dziwnego, że to tam powstało w dziewiętnastym wieku pierwsze biuro podróży, które zajmowało się zawodowo wysyłaniem ludzi w atrakcyjne miejsca. Pierwsza, zorganizowana przez biuro podróży wycieczka, odbyła się na terenie Anglii. Bardzo szybko jednak zaczęto podróżować do innych krajów, a nawet na inne kontynenty. W dziewiętnastym wieku najbardziej atrakcyjnymi miejscami dla turystów był Egipt i Włochy. To tam najchętniej podróżowano. Ciekawe, że przez tyle lat kierunki wyjazdów aż tak bardzo się nie zmieniły. Wciąż podróżujemy tam, gdzie są zabytki, dobra kuchnia, przyjaźnie nastawieni ludzie i możliwość wypoczynku na łonie natury. Kiedy zaczynamy swoją przygodę z podróżowaniem, najczęściej udajemy się do miejsc znanych i popularnych. Chcemy porównać nasze marzenia i oczekiwania z rzeczywistością. Podążając znanymi i wytyczonymi szlakami, możemy doznać rozczarowania, albo tak się zachwycić, by poszukiwać czegoś jeszcze. Z biegiem czasu poszukujemy miejsc nieznanych, pragniemy je odkryć dla siebie. Pociągają nas wyprawy, które wnoszą do naszego życia coś innego. Tego typu wyprawy planujemy długo i starannie. Chcemy dotrzeć tam, gdzie inni jeszcze nie byli, albo skorzystać z takiej formy podróżowania, która jest mało popularna. To pozwala nam na odkrywanie nowej jakości podróży, dotykania rzeczy pierwotnych, esencji życia. Mamy wiele przykładów takiego podróżowania. Francję na rowerze na przykład poznawał w czasie drugiej wojny światowej Andrzej Bobkowski. Takie podróżowanie pozwoliło mu lepiej poznać ludzi i zrozumieć to, co się wokół dzieje. Nie ma co ukrywać, że na podróż nie mamy zbyt dużo czasu.
                 </p>
             </div>
         </article>
@@ -83,8 +83,8 @@
     <div id="dialog" style="display: none" title="Błąd">
         <p>Pola formularza nie mogą być puste.</p>
     </div>
-    <div id="greeter" style="display: none" title="Witaj">
-        <p>Greetings!</p>
+    <div id="greeter" style="display: none" title="Nadchodzące wydarzenia.">
+        <p><b>10-11 kwietnia 2021</b> Free Time Festiwal 2020</p>
     </div>
 
     <script src="jQuery/external/jquery/jquery.js"></script>
@@ -96,6 +96,7 @@
         GreetUser();
         ReloadNotes();
         InitializeClock();
+        SetTextSize();
     </script>
 </body>
 </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="base.css">
+    <link href="jQuery/jquery-ui.css" rel="stylesheet">
+    <link href="jQuery/external/jquery/jquery.js" rel="script">
+    <script src="scripts/ls.js"></script>
+    <noscript>
+        <style>
+            .hide-when-scripts-disabled {display:none;}
+        </style>
+    </noscript>
+</head>
+<body>
+    <div id="container">
+        <header >
+            <div id="title">
+                <h1>
+                    Podróżowanie - Moje hobby
+                </h1>
+                <button class="btn hide-when-scripts-disabled" id="textSwapBtn" onclick="SwapTextSize()">A</button>
+            </div>
+        </header>
+        <aside>
+            <div id="left-panel">
+                <div id="navigation">
+                    <a href="index.html">
+                        <div class="nav-option">
+                            Strona główna
+                        </div>
+                    </a>
+                    <a href="events.html">
+                        <div class="nav-option">
+                            Nadchodzące wydarzenia
+                        </div>
+                    </a>
+                    <a href="places.html">
+                        <div class="nav-option">
+                            Interesujące miejsca
+                        </div>
+                    </a>
+                    <a href="gallery.html">
+                        <div class="nav-option">
+                            Galeria
+                        </div>
+                    </a>
+                </div>
+                <div id="notebook" class="hide-when-scripts-disabled" >
+                    <h2>Notatki</h2>
+                    <form id="noteForm" onsubmit="AddNote();return false;">
+                        <label for="noteTitle">Tytuł:</label><input type="text" id="noteTitle" name="title" class="text-box" title="Tutaj wprowadź tyłuł swojej notatki"/><br/>
+                        <label for="noteContent">Treść:</label><input type="text" id="noteContent" name="con" class="text-box" title="Tutaj wprowadź treść swojej notatki"/><br/>
+                        <input type="submit" class="btn" value="Zapisz" title="Kliknij tutaj aby zapisać notatkę"/>
+                        <input type="reset" class="btn" value="Wyczyść" title="Kliknij tutaj aby wyczyścić formularz">
+                    </form>
+                </div>
+                <div id="accordion" class="hide-when-scripts-disabled">
+
+                </div>
+
+            </div>
+
+        </aside>
+        <article>
+            <div id="content">
+                <h2>Niedługo...</h2>
+                <p class="content-text" id="contentParagraph">
+                    <b>10-11 kwietnia 2021</b> Free Time Festiwal 2020
+                </p>
+            </div>
+        </article>
+        <footer>
+            <div id="ft">
+                <span class="hide-when-scripts-disabled">Czas trwania sesji: <span id="clock"></span></span>
+                <span>Made by Bartosz Strzelecki 2020</span>
+            </div>
+        </footer>
+    </div>
+
+    <div id="dialog" style="display: none" title="Błąd">
+        <p>Pola formularza nie mogą być puste.</p>
+    </div>
+    <div id="greeter" style="display: none" title="Nadchodzące wydarzenia.">
+        <p><b>10-11 kwietnia 2021</b> Free Time Festiwal 2020</p>
+    </div>
+
+    <script src="jQuery/external/jquery/jquery.js"></script>
+    <script src="jQuery/jquery-ui.js"></script>
+    <script>
+        $( "#accordion" ).accordion();
+    </script>
+    <script>
+        GreetUser();
+        ReloadNotes();
+        InitializeClock();
+    </script>
+</body>
+</html>

@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2304394-1d6e-44e0-9828-b06e258df32c" name="Default Changelist" comment="" />
+    <list default="true" id="c2304394-1d6e-44e0-9828-b06e258df32c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotorama/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotorama/fotorama.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotorama/fotorama.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotorama/fotorama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotorama/fotorama@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/castle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/israel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/pantheon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/russia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/spain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/places.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jQuery/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ls.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ls.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,12 +59,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1igMYcTAbY3izEZddXpe1MBaKLM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -53,11 +93,26 @@
       <workItem from="1602324831766" duration="1400000" />
       <workItem from="1602331540411" duration="17789000" />
       <workItem from="1602405868444" duration="15527000" />
+      <workItem from="1602519713250" duration="10812000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2777" y="-713" key="#JSHint" timestamp="1602342004714">
