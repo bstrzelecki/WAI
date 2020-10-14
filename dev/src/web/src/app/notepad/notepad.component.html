@@ -1,0 +1,23 @@
+<div id="notebook">
+  <h2>Notatki</h2>
+  <form id="noteForm">
+    <label for="noteTitle">Tytuł:</label>
+    <input type="text" id="noteTitle" name="title" class="text-box" [(ngModel)]="title" title="Tutaj wprowadź tyłuł swojej notatki" required /><br/>
+
+    <label for="noteContent">Treść:</label>
+    <input type="text" id="noteContent" name="con" class="text-box" [(ngModel)]="desc" title="Tutaj wprowadź treść swojej notatki" required/><br/>
+
+    <input type="submit" class="btn" value="Zapisz" (click)="OnSubmit()" title="Kliknij tutaj aby zapisać notatkę"/>
+    <input type="reset" class="btn" value="Wyczyść" title="Kliknij tutaj aby wyczyścić formularz">
+  </form>
+</div>
+
+<div id="accordion">
+  <ng-container *ngFor="let note of notes; let i=index">
+    <div>
+      <h3>{{note.title}}</h3>
+      <button (click)="RemoveNote(i)">X</button>
+    </div>
+    <div>{{note.content}}</div>
+  </ng-container>
+</div>
