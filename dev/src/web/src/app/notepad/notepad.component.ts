@@ -1,20 +1,26 @@
 import {AfterViewInit, Component, Input, OnInit, QueryList, ViewChildren} from '@angular/core';
 import * as $ from 'jquery';
 import 'jquery-ui/ui/widgets/accordion';
+import 'jquery-ui/ui/widgets/dialog';
 @Component({
   selector: 'app-notepad',
   templateUrl: 'notepad.component.html',
   styleUrls: ['notepad.component.css']
 })
-export class NotepadComponent implements AfterViewInit {
+export class NotepadComponent implements OnInit, AfterViewInit {
 
   public title:string = "";
   public desc:string = "";
 
+  isDialogInitialized:boolean = false;
 
   @ViewChildren('accordion') accordion: QueryList<any>;
   @Input() public notes;
+
+
   public OnSubmit(): void{
+    if(!this.Validate())
+      return;
     const arr = [{"title":this.title, "content":this.desc}];
 
     const data =  JSON.parse(localStorage.getItem("notes"));
@@ -34,7 +40,6 @@ export class NotepadComponent implements AfterViewInit {
   }
   public LoadNotes():void{
     this.notes = JSON.parse(localStorage.getItem("notes"));
-
   }
   public RemoveNote(n:number):void{
     const data =  JSON.parse(localStorage.getItem("notes"));
@@ -42,15 +47,15 @@ export class NotepadComponent implements AfterViewInit {
     localStorage.setItem("notes", JSON.stringify(data));
     this.LoadNotes();
   }
+  Validate():boolean{
+    if(this.title===""||this.desc===""){
+      this.DrawPopup();
+      return false;
+    }
+    return true;
+  }
   ngOnInit(): void {
     this.LoadNotes();
-
-  }
-  GetNotes(): void{
-    this.notes = JSON.parse(localStorage.getItem("notes"));
-  }
-  ngForRendred():void {
-
   }
   ngAfterViewInit(): void {
     this.accordion.changes.subscribe(()=>{
@@ -60,5 +65,9 @@ export class NotepadComponent implements AfterViewInit {
     // @ts-ignore
     $('#accordion').accordion();
   }
-
+  DrawPopup():void{
+    this.isDialogInitialized=true;
+    // @ts-ignore
+    $("#dialog").dialog();
+  }
 }

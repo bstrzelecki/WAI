@@ -21,3 +21,7 @@
     <div>{{note.content}}</div>
   </ng-container>
 </div>
+
+<div id="dialog" title="Błąd!" [style.display]="isDialogInitialized?'block':'none'">
+  Pola tego formularza nie mogą być puste.
+</div>

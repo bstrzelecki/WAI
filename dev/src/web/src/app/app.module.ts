@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { ClockComponent } from './clock/clock.component';
 import { NotepadComponent } from './notepad/notepad.component';
 import {FormsModule} from "@angular/forms";
+import { GreeterComponent } from './greeter/greeter.component';
 
 @NgModule({
   declarations: [
     ClockComponent,
-    NotepadComponent
+    NotepadComponent,
+    GreeterComponent
   ],
   imports: [
     BrowserModule,

@@ -20,78 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23d6d34d-d02a-4e50-8aba-088b35f075b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/greeter/greeter.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/greeter/greeter.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/greeter/greeter.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/greeter/greeter.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotorama/example.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotorama/fotorama.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotorama/fotorama.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotorama/fotorama.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fotorama/fotorama@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/castle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/israel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pantheon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/russia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/spain.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/AUTHORS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/external/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/images/ui-icons_444444_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/images/ui-icons_555555_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/images/ui-icons_777620_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/images/ui-icons_777777_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/images/ui-icons_cc0000_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/jquery-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/jquery-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/jquery-ui.structure.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/jquery-ui.structure.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/jquery-ui.theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/jquery-ui.theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/places.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/noteLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/notepad.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/notepad.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602677521922</updated>
-      <workItem from="1602677524553" duration="18664000" />
+      <workItem from="1602677524553" duration="22340000" />
     </task>
     <servers />
   </component>
