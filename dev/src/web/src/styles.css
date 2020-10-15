@@ -71,6 +71,9 @@ div{
   margin:auto;
   background: transparent;
 }
+.fontLarge{
+  font-size: xx-large;
+}
 #title{
   padding: 5px;
 }

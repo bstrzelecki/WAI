@@ -12,7 +12,6 @@ export class GreeterComponent implements OnInit {
   isDialogInitialized:boolean = false;
 
   ngOnInit(): void {
-    console.log("greeter");
     if(sessionStorage.getItem("hasBeenGreeted") === "true")return;
     this.isDialogInitialized=true;
     // @ts-ignore
