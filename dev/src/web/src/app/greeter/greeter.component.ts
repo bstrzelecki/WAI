@@ -1,21 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import * as $ from 'jquery';
 import 'jquery-ui/ui/widgets/dialog';
 
 @Component({
   selector: 'app-greeter',
   templateUrl: './greeter.component.html',
-  styleUrls: ['./greeter.component.css']
+  styleUrls: ['../../theme.css']
 })
 export class GreeterComponent implements OnInit {
 
-  isDialogInitialized:boolean = false;
+  isDialogInitialized = false;
 
   ngOnInit(): void {
-    if(sessionStorage.getItem("hasBeenGreeted") === "true")return;
-    this.isDialogInitialized=true;
+    if (sessionStorage.getItem('hasBeenGreeted') === 'true') {
+      return;
+    }
+    this.isDialogInitialized = true;
     // @ts-ignore
-    $( "#greeter" ).dialog();
-    sessionStorage.setItem("hasBeenGreeted", "true");
+    $('#greeter').dialog();
+    sessionStorage.setItem('hasBeenGreeted', 'true');
   }
 }

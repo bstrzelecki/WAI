@@ -1,4 +1,4 @@
-.btn{
+.btn {
   background: darkorange;
   color: white;
   border: black;
@@ -6,6 +6,7 @@
   padding: 3px;
   margin: 1px;
 }
-.btn:hover{
+
+.btn:hover {
   background: lightsalmon;
 }

@@ -1,32 +1,40 @@
-body{
+body {
   background: black;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.nav-option{
+
+.nav-option {
   width: auto;
   padding: 5px;
 }
-.nav-option:hover{
+
+.nav-option:hover {
   background: lightsalmon;
 }
-.nav-option:active{
+
+.nav-option:active {
   background: darkorange;
 }
-div{
+
+div {
   background: orange;
   color: white;
 }
-#gallery{
+
+#gallery {
   display: flex;
   justify-content: center;
 }
-#title{
+
+#title {
   display: flex;
   justify-content: space-between;
 }
-.btn{
+
+.btn {
   background: darkorange;
   color: white;
   border: black;
@@ -34,72 +42,85 @@ div{
   padding: 3px;
   margin: 1px;
 }
-.btn:hover{
+
+.btn:hover {
   background: lightsalmon;
 }
-.text-box{
+
+.text-box {
   background: orange;
   border-color: #b96114;
-  color:white;
+  color: white;
   padding: 2px;
   width: 120px;
   margin: 2px;
 }
-#left-panel{
+
+#left-panel {
   width: 192px;
   height: 100%;
   margin-top: 10px;
   background: transparent;
   float: left;
 }
-#navigation{
+
+#navigation {
   margin-bottom: -10px;
 }
-#content{
+
+#content {
   width: 738px;
-  float:left;
+  float: left;
   padding: 10px;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#container{
-  width:960px;
-  margin:auto;
+
+#container {
+  width: 960px;
+  margin: auto;
   background: transparent;
 }
-.fontLarge{
+
+.fontLarge {
   font-size: xx-large;
 }
-#title{
+
+#title {
   padding: 5px;
 }
-#ft{
+
+#ft {
   clear: both;
   padding: 5px;
   display: flex;
   justify-content: space-between;
 }
 
-@media screen and (max-width: 960px){
-  #content{
+@media screen and (max-width: 960px) {
+  #content {
     float: none;
     width: 100%;
     margin-left: 0;
     padding: 0;
   }
-  #ft{
+
+  #ft {
     text-align: center;
   }
-  .content-text{
+
+  .content-text {
     padding: 10px;
   }
-  #left-panel{
+
+  #left-panel {
     width: 100%;
     text-align: center;
-    float:none;
+    float: none;
   }
-  #container{
+
+  #container {
     width: 100%;
   }
 }

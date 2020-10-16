@@ -1,8 +1,8 @@
-import {Component, ElementRef, OnInit} from '@angular/core';
+import {Component, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-size-adjust',
-  templateUrl: './size-adjust.component.html',
+  template: '<button (click)="SwapSize()" class="btn">{{letter}}</button>',
   styleUrls: ['./size-adjust.component.css']
 })
 export class SizeAdjustComponent {
@@ -11,11 +11,12 @@ export class SizeAdjustComponent {
 
   letter = 'A';
 
-  constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef) {
+  }
 
-  public SwapSize(): void{
+  public SwapSize(): void {
     let size = sessionStorage.getItem('size');
-    if (size === null){
+    if (size === null) {
       size = 'medium';
     }
     size = size === 'medium' ? 'x-large' : 'medium';
