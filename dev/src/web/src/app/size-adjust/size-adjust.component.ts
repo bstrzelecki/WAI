@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-size-adjust',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SizeAdjustComponent {
 
-  public static textSize = 'medium';
+  textSize = 'medium';
 
   letter = 'A';
+
+  constructor(private el: ElementRef) { }
 
   public SwapSize(): void{
     let size = sessionStorage.getItem('size');
@@ -17,8 +19,9 @@ export class SizeAdjustComponent {
       size = 'medium';
     }
     size = size === 'medium' ? 'x-large' : 'medium';
-    SizeAdjustComponent.textSize = size;
+    this.textSize = size;
     this.letter = size === 'medium' ? 'A' : 'a';
     sessionStorage.setItem('size', size);
+    this.el.nativeElement.closest('body').style.fontSize = this.textSize;
   }
 }

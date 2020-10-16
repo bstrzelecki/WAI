@@ -8,6 +8,7 @@ import {FormsModule} from '@angular/forms';
 import { GreeterComponent } from './greeter/greeter.component';
 import { SizeAdjustComponent } from './size-adjust/size-adjust.component';
 import { ContentComponent } from './content/content.component';
+import { ContentDirective } from './content.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContentComponent } from './content/content.component';
     NotepadComponent,
     GreeterComponent,
     SizeAdjustComponent,
-    ContentComponent
+    ContentComponent,
+    ContentDirective
   ],
   imports: [
     BrowserModule,
