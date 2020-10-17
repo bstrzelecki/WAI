@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import * as $ from 'jquery';
+import 'jquery';
 import 'jquery-ui/ui/widgets/dialog';
+declare var $: any;
 
 @Component({
   selector: 'app-greeter',
@@ -16,7 +17,7 @@ export class GreeterComponent implements OnInit {
       return;
     }
     this.isDialogInitialized = true;
-    // @ts-ignore
+
     $('#greeter').dialog();
     sessionStorage.setItem('hasBeenGreeted', 'true');
   }

@@ -3,6 +3,7 @@ import 'jquery';
 import 'jquery-ui/ui/widgets/accordion';
 import 'jquery-ui/ui/widgets/dialog';
 import './jquery.scrambler';
+declare var $: any;
 
 @Component({
   selector: 'app-notepad',

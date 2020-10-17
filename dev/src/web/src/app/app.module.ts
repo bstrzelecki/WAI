@@ -1,7 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
-import {AppRoutingModule} from './app-routing.module';
 import {ClockComponent} from './clock/clock.component';
 import {NotepadComponent} from './notepad/notepad.component';
 import {FormsModule} from '@angular/forms';
@@ -18,7 +17,6 @@ import {SizeAdjustComponent} from './size-adjust/size-adjust.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule
   ],
   providers: [],

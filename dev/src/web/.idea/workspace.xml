@@ -21,13 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="23d6d34d-d02a-4e50-8aba-088b35f075b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/notepad/jquery.scrambler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/jquery.scrambler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/notepad.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/notepad.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/greeter/greeter.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/greeter/greeter.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/notepad.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index - Copy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
     <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/node_modules/protractor" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="ts.external.directory.path" value="C:\Users\mabat\Desktop\WAI\dev\src\web\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -75,7 +72,6 @@
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests (web)" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/karma.conf.js" />
-      <karma-package-dir value="$PROJECT_DIR$/node_modules/@angular/cli" />
       <working-directory value="$PROJECT_DIR$" />
       <node-interpreter value="project" />
       <envs />
@@ -117,6 +113,8 @@
       <workItem from="1602771045049" duration="9560000" />
       <workItem from="1602848649762" duration="6105000" />
       <workItem from="1602927581746" duration="6806000" />
+      <workItem from="1602939229912" duration="88000" />
+      <workItem from="1602939320919" duration="196000" />
     </task>
     <servers />
   </component>
@@ -159,10 +157,10 @@
       <screen x="1920" y="-1045" width="2560" height="1409" />
     </state>
     <state x="2949" y="-486" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602935255952" />
-    <state x="2981" y="-586" key="FileChooserDialogImpl" timestamp="1602771040933">
+    <state x="2981" y="-586" key="FileChooserDialogImpl" timestamp="1602939317222">
       <screen x="1920" y="-1045" width="2560" height="1409" />
     </state>
-    <state x="2981" y="-586" key="FileChooserDialogImpl/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602771040933" />
+    <state x="2981" y="-586" key="FileChooserDialogImpl/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602939317222" />
     <state width="1269" height="404" key="GridCell.Tab.0.bottom" timestamp="1602702412896">
       <screen x="1920" y="-1045" width="2560" height="1409" />
     </state>
