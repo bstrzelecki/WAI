@@ -1,8 +1,8 @@
 import {AfterViewInit, Component, Input, OnInit, QueryList, ViewChildren} from '@angular/core';
-import * as $ from 'jquery';
+import 'jquery';
 import 'jquery-ui/ui/widgets/accordion';
 import 'jquery-ui/ui/widgets/dialog';
-
+import './jquery.scrambler';
 @Component({
   selector: 'app-notepad',
   templateUrl: 'notepad.component.html',
@@ -62,6 +62,8 @@ export class NotepadComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.LoadNotes();
+    // @ts-ignore
+    $('.scramble').scrambler();
   }
 
   ngAfterViewInit(): void {

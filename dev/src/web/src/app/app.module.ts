@@ -7,7 +7,6 @@ import {NotepadComponent} from './notepad/notepad.component';
 import {FormsModule} from '@angular/forms';
 import {GreeterComponent} from './greeter/greeter.component';
 import {SizeAdjustComponent} from './size-adjust/size-adjust.component';
-import {Routes} from '@angular/router';
 
 
 @NgModule({
