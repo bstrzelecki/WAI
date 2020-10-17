@@ -950,14 +950,6 @@
   position: relative;
 }
 
-.ui-resizable-w {
-  cursor: w-resize;
-  width: 7px;
-  left: -5px;
-  top: 0;
-  height: 100%;
-}
-
 .ui-resizable-se {
   cursor: se-resize;
   width: 12px;
@@ -1080,11 +1072,6 @@
 .ui-dialog .ui-dialog-buttonpane button {
   margin: .5em .4em .5em 0;
   cursor: pointer;
-}
-
-.ui-dialog .ui-resizable-w {
-  width: 2px;
-  left: 0;
 }
 
 .ui-dialog .ui-resizable-se {

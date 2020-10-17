@@ -6,9 +6,11 @@
   text-align: center;
   margin-bottom: -5px;
 }
-.noteTitle{
+
+.noteTitle {
   overflow: auto;
 }
+
 @media screen and (max-width: 960px) {
   #noteForm {
     text-align: center;

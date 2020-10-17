@@ -3,6 +3,7 @@ import 'jquery';
 import 'jquery-ui/ui/widgets/accordion';
 import 'jquery-ui/ui/widgets/dialog';
 import './jquery.scrambler';
+
 @Component({
   selector: 'app-notepad',
   templateUrl: 'notepad.component.html',
@@ -62,22 +63,18 @@ export class NotepadComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.LoadNotes();
-    // @ts-ignore
     $('.scramble').scrambler();
   }
 
   ngAfterViewInit(): void {
     this.accordion.changes.subscribe(() => {
-      // @ts-ignore
       $('#accordion').accordion('refresh');
     });
-    // @ts-ignore
     $('#accordion').accordion();
   }
 
   DrawPopup(): void {
     this.isDialogInitialized = true;
-    // @ts-ignore
     $('#dialog').dialog();
   }
 }

@@ -16,7 +16,7 @@
 
 <div id="accordion">
   <ng-container *ngFor="let note of notes; let i=index">
-    <div >
+    <div>
       <h3 class="noteTitle">{{note.title}}</h3>
       <button (click)="RemoveNote(i)" class="removeBtn">X</button>
     </div>

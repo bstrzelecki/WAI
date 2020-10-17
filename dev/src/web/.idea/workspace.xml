@@ -20,18 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23d6d34d-d02a-4e50-8aba-088b35f075b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/notepad/jquery.scrambler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/castle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/israel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/pantheon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/russia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/spain.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notepad/jquery.scrambler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/jquery.scrambler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/notepad.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/notepad.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/notepad.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index - Copy.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +116,7 @@
       <workItem from="1602770897339" duration="146000" />
       <workItem from="1602771045049" duration="9560000" />
       <workItem from="1602848649762" duration="6105000" />
-      <workItem from="1602927581746" duration="5477000" />
+      <workItem from="1602927581746" duration="6806000" />
     </task>
     <servers />
   </component>
@@ -143,10 +139,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2827" y="-662" key="#Inspections" timestamp="1602852385768">
+    <state x="2827" y="-662" key="#Inspections" timestamp="1602935281957">
       <screen x="1920" y="-1045" width="2560" height="1409" />
     </state>
-    <state x="2827" y="-662" key="#Inspections/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602852385768" />
+    <state x="2827" y="-662" key="#Inspections/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602935281957" />
     <state x="2793" y="-682" width="814" height="728" key="#Intentions" timestamp="1602695480173">
       <screen x="1920" y="-1045" width="2560" height="1409" />
     </state>
@@ -159,10 +155,10 @@
       <screen x="1920" y="-1045" width="2560" height="1409" />
     </state>
     <state x="2931" y="-594" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602851853564" />
-    <state x="2949" y="-486" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602852209681">
+    <state x="2949" y="-486" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602935255952">
       <screen x="1920" y="-1045" width="2560" height="1409" />
     </state>
-    <state x="2949" y="-486" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602852209681" />
+    <state x="2949" y="-486" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602935255952" />
     <state x="2981" y="-586" key="FileChooserDialogImpl" timestamp="1602771040933">
       <screen x="1920" y="-1045" width="2560" height="1409" />
     </state>
