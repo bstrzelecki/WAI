@@ -1,6 +1,8 @@
 <!doctype html>
 <?php require "Context.php";
-      require "PlainTextDisplayController.php";
+      require "Controllers/PlainTextDisplayController.php";
+      require "Controllers/UploadController.php";
+
 ?>
 <html lang="pl">
 <head>
@@ -46,7 +48,20 @@ Podróżowanie - Moje hobby
       </div>
 
       <app-notepad></app-notepad>
-
+        <?php
+            $left = new Context();
+            $left->router->bind("GET", "/gallery", function (){
+                $form = new UploadController();
+                $form->bindView("Views/UploadView");
+                $form->bindModel("Models/MainModel");
+                $form->init();
+            });
+            $left->router->bind("POST", "/gallery/upload", function (){
+                $form = new UploadController();
+                $form->handleFileUpload();
+            });
+            $left->apply();
+        ?>
     </div>
 
   </aside>

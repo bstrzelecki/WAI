@@ -20,22 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="541f8066-abcc-4674-8f1d-ecc52cf39d12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Context.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/PlainTextDisplayController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/UploadController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/EventModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/MainModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/PlacesModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/MainView.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/UploadView.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/israel.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/UploadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +105,7 @@
       <updated>1603219986112</updated>
       <workItem from="1603219987460" duration="11000" />
       <workItem from="1603277847937" duration="47000" />
-      <workItem from="1603277933181" duration="16443000" />
+      <workItem from="1603277933181" duration="20167000" />
     </task>
     <servers />
   </component>
@@ -141,14 +131,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1603302904867">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1603306910678">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603302904867" />
-    <state x="757" y="278" key="NewPhpClassDialog" timestamp="1603304594785">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603306910678" />
+    <state x="757" y="278" key="NewPhpClassDialog" timestamp="1603306880719">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="757" y="278" key="NewPhpClassDialog/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603304594785" />
+    <state x="757" y="278" key="NewPhpClassDialog/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603306880719" />
     <state x="794" y="478" key="NewPhpFileDialog" timestamp="1603283810095">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
