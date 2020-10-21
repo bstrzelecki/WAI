@@ -19,55 +19,72 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23d6d34d-d02a-4e50-8aba-088b35f075b3" name="Default Changelist" comment="">
+    <list default="true" id="541f8066-abcc-4674-8f1d-ecc52cf39d12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/greeter/greeter.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/greeter/greeter.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/notepad/notepad.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/clock/clock.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/greeter/greeter.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/greeter/greeter.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notepad/jquery.scrambler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notepad/notepad.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/size-adjust/size-adjust.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/size-adjust/size-adjust.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/castle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/israel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pantheon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/russia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/spain.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-      </list>
-    </option>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="1irtQL5qvxdI8bUB77o1P3gfCnv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1j9cwARKyO3c0Y8b49iiLLG0OoH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/node_modules/protractor" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mabat\Desktop\WAI\dev\src\web\src" />
-    </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests (web)" type="JavaScriptTestRunnerKarma">
@@ -80,7 +97,6 @@
     <configuration name="E2E Tests (web)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
-      <protractor-package value="$PROJECT_DIR$/node_modules/protractor" />
       <protractor-options value="" />
       <envs />
       <scope-kind value="ALL" />
@@ -103,23 +119,21 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="23d6d34d-d02a-4e50-8aba-088b35f075b3" name="Default Changelist" comment="" />
-      <created>1602677521922</created>
+      <changelist id="541f8066-abcc-4674-8f1d-ecc52cf39d12" name="Default Changelist" comment="" />
+      <created>1603219986112</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602677521922</updated>
-      <workItem from="1602677524553" duration="22614000" />
-      <workItem from="1602770897339" duration="146000" />
-      <workItem from="1602771045049" duration="9560000" />
-      <workItem from="1602848649762" duration="6105000" />
-      <workItem from="1602927581746" duration="6806000" />
-      <workItem from="1602939229912" duration="88000" />
-      <workItem from="1602939320919" duration="196000" />
+      <updated>1603219986112</updated>
+      <workItem from="1603219987460" duration="11000" />
+      <workItem from="1603277847937" duration="47000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="JavaScriptTestRunnerKarma" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -132,58 +146,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2827" y="-662" key="#Inspections" timestamp="1602935281957">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state x="2827" y="-662" key="#Inspections/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602935281957" />
-    <state x="2793" y="-682" width="814" height="728" key="#Intentions" timestamp="1602695480173">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state x="2793" y="-682" width="814" height="728" key="#Intentions/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602695480173" />
-    <state x="3006" y="-625" key="#com.intellij.ide.util.MemberChooser" timestamp="1602928626019">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state x="3006" y="-625" key="#com.intellij.ide.util.MemberChooser/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602928626019" />
-    <state x="2931" y="-594" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602851853564">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state x="2931" y="-594" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602851853564" />
-    <state x="2949" y="-486" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602935255952">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state x="2949" y="-486" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602935255952" />
-    <state x="2981" y="-586" key="FileChooserDialogImpl" timestamp="1602939317222">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state x="2981" y="-586" key="FileChooserDialogImpl/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602939317222" />
-    <state width="1269" height="404" key="GridCell.Tab.0.bottom" timestamp="1602702412896">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state width="1269" height="404" key="GridCell.Tab.0.bottom/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602702412896" />
-    <state width="1269" height="404" key="GridCell.Tab.0.center" timestamp="1602702412896">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state width="1269" height="404" key="GridCell.Tab.0.center/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602702412896" />
-    <state width="1269" height="404" key="GridCell.Tab.0.left" timestamp="1602702412895">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state width="1269" height="404" key="GridCell.Tab.0.left/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602702412895" />
-    <state width="1269" height="404" key="GridCell.Tab.0.right" timestamp="1602702412896">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state width="1269" height="404" key="GridCell.Tab.0.right/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602702412896" />
-    <state x="2857" y="-189" key="run.anything.popup" timestamp="1602929432914">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state x="2857" y="-189" key="run.anything.popup/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602929432914" />
-    <state x="2863" y="-727" width="672" height="678" key="search.everywhere.popup" timestamp="1602690900259">
-      <screen x="1920" y="-1045" width="2560" height="1409" />
-    </state>
-    <state x="2863" y="-727" width="672" height="678" key="search.everywhere.popup/0.30.1536.834/1920.-1045.2560.1409@1920.-1045.2560.1409" timestamp="1602690900259" />
   </component>
 </project>

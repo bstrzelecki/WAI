@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Web</title>
+  <base href="/">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<div id="container">
+  <header>
+    <div id="title">
+      <h1>
+        Podróżowanie - Moje hobby
+      </h1>
+      <app-size-adjust></app-size-adjust>
+    </div>
+  </header>
+  <aside>
+    <div id="left-panel">
+      <div id="navigation">
+        <a href="index.html">
+          <div class="nav-option">
+            Strona główna
+          </div>
+        </a>
+        <a href="events.html">
+          <div class="nav-option">
+            Nadchodzące wydarzenia
+          </div>
+        </a>
+        <a href="places.html">
+          <div class="nav-option">
+            Interesujące miejsca
+          </div>
+        </a>
+        <a href="gallery.html">
+          <div class="nav-option">
+            Galeria
+          </div>
+        </a>
+      </div>
+      <app-notepad></app-notepad>
+
+    </div>
+
+  </aside>
+  <article>
+    <div id="content">
+      <div style="overflow: hidden;">
+        <img alt="castle.jpg" src="img/castle.jpg">
+        <img alt="pantheon.jpg" src="img/pantheon.jpg">
+        <img alt="israel.jpg" src="img/israel.jpg">
+        <img alt="russia.jpg" src="img/russia.jpg">
+        <img alt="spain.jpg" src="img/spain.jpg">
+    </div>
+    </div>
+  </article>
+  <footer>
+    <div id="ft">
+      <app-clock></app-clock>
+      <span>Made by Bartosz Strzelecki 2020</span>
+    </div>
+  </footer>
+</div>
+<app-greeter></app-greeter>
+<script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="scripts.js" defer></script><script src="main.js" defer></script></body>
+</html>

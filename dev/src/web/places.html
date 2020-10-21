@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Web</title>
+  <base href="/">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<div id="container">
+  <header>
+    <div id="title">
+      <h1>
+        Podróżowanie - Moje hobby
+      </h1>
+      <app-size-adjust></app-size-adjust>
+    </div>
+  </header>
+  <aside>
+    <div id="left-panel">
+      <div id="navigation">
+        <a href="index.html">
+          <div class="nav-option">
+            Strona główna
+          </div>
+        </a>
+        <a href="events.html">
+          <div class="nav-option">
+            Nadchodzące wydarzenia
+          </div>
+        </a>
+        <a href="places.html">
+          <div class="nav-option">
+            Interesujące miejsca
+          </div>
+        </a>
+        <a href="gallery.html">
+          <div class="nav-option">
+            Galeria
+          </div>
+        </a>
+      </div>
+      <app-notepad></app-notepad>
+
+    </div>
+
+  </aside>
+  <article>
+    <div id="content">
+      <h2>Warto zobaczyć</h2>
+        <div class="content-text" id="contentParagraph">
+          <ul>
+            <li>Stonehenge (Wielka Brytania)</li>
+            <li>Wersal (Francja)</li>
+            <li>Koloseum (Włochy)</li>
+            <li>Parteon (Grecja)</li>
+            <li>Big Ben (Wielka Brytania)</li>
+            <li>Most Karola (Czechy)</li>
+            <li>Brama Brandenburska (Niemcy)</li>
+            <li>Wieża Eiffla (Francja)</li>
+          </ul>
+    </div>
+  </article>
+  <footer>
+    <div id="ft">
+      <app-clock></app-clock>
+      <span>Made by Bartosz Strzelecki 2020</span>
+    </div>
+  </footer>
+</div>
+<app-greeter></app-greeter>
+<script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="scripts.js" defer></script><script src="main.js" defer></script></body>
+</html>
