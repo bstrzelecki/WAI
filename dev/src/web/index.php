@@ -2,7 +2,7 @@
 <?php require "Context.php";
       require "Controllers/PlainTextDisplayController.php";
       require "Controllers/UploadController.php";
-
+      require "Controllers/GalleryController.php";
 ?>
 <html lang="pl">
 <head>
@@ -88,9 +88,9 @@ Podróżowanie - Moje hobby
                 $main->init();
             });
             $content->router->bind("GET", "/gallery", function (){
-                $main = new PlainTextDisplayController();
-                $main->bindModel("Models/MainModel");
-                $main->bindView("Views/MainView");
+                $main = new GalleryController();
+                $main->bindModel("Models/GalleryModel");
+                $main->bindView("Views/GalleryView");
                 $main->init();
             });
             $content->apply();
