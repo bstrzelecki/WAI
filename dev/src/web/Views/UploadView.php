@@ -14,7 +14,7 @@ class UploadView  extends View
                     <input type="text" id="photoTitle" name="photoTitle"/>
   
                     <label for="author">Autor:</label>
-                    <input type="text" id="author" name="author"/>
+                    <input type="text" id="author" name="author" value="{$this->getParam("userName")}" {$this->getParam("isAuthorDisabled")}/>
                     
                     <label for="watermark">Znak wodny:</label>
                     <input type="text" id="watermark" name="watermark"/>

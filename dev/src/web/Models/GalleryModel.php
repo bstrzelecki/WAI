@@ -13,7 +13,7 @@ class GalleryModel extends Model
         $files = scandir("/var/www/dev/src/web/images");
         $ti = 0;
         $pi = 0;
-        $db = new MongoDatabaseAdapter();
+        $db = Manifest::getDatabaseAdapter();
 
         foreach ($files as $file){
             if($file == "." || $file == "..")continue;

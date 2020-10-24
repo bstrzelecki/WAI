@@ -46,7 +46,7 @@ class UploadController extends Controller
             echo "Possible error";
         }
 
-        $db = new MongoDatabaseAdapter();
+        $db = Manifest::getDatabaseAdapter();
         $db->pushPhoto($guid, $_POST["photoTitle"], $_POST["author"]);
 
     }

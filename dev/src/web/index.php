@@ -1,9 +1,21 @@
-<!doctype html>
-<?php require "Context.php";
+<?php
+      session_start();
+      require "Manifest.php";
+      require "Context.php";
       require "Controllers/PlainTextDisplayController.php";
       require "Controllers/UploadController.php";
       require "Controllers/GalleryController.php";
+      require "Controllers/UserStateController.php";
+      require "Controllers/AuthenticationController.php";
+
+      $sessionCtrl = new Context();
+      $sessionCtrl->router->bind("GET", "/logout", function (){
+          session_unset();
+          session_destroy();
+      });
+      $sessionCtrl->apply();
 ?>
+<!doctype html>
 <html lang="pl">
 <head>
   <meta charset="utf-8">
@@ -17,8 +29,8 @@
   <header>
     <div id="title">
       <h1>
-Podróżowanie - Moje hobby
-</h1>
+        Podróżowanie - Moje hobby
+      </h1>
       <app-size-adjust></app-size-adjust>
     </div>
   </header>
@@ -47,13 +59,25 @@ Podróżowanie - Moje hobby
         </a>
       </div>
 
+        <?php
+            $auth = new Context();
+            $auth->router->bind("POST", "/login/submit", function (){});
+            $auth->router->any(function (){
+                $btns = new UserStateController();
+                $btns->bindModel("Models/UserStateModel");
+                $btns->bindView("Views/UserStateView");
+                $btns->init();
+            });
+            $auth->apply();
+        ?>
+
       <app-notepad></app-notepad>
         <?php
             $left = new Context();
             $left->router->bind("GET", "/gallery", function (){
                 $form = new UploadController();
                 $form->bindView("Views/UploadView");
-                $form->bindModel("Models/MainModel");
+                $form->bindModel("Models/UploadModel");
                 $form->init();
             });
             $left->router->bind("POST", "/gallery/upload", function (){
@@ -93,8 +117,36 @@ Podróżowanie - Moje hobby
                 $main->bindView("Views/GalleryView");
                 $main->init();
             });
+            $content->router->bind("GET", "/register", function (){
+                $main = new AuthenticationController();
+                $main->bindModel("Models/AuthenticationModel");
+                $main->bindView("Views/RegisterView");
+                $main->init();
+            });
+            $content->router->bind("GET", "/login", function (){
+                $main = new AuthenticationController();
+                $main->bindModel("Models/AuthenticationModel");
+                $main->bindView("Views/LoginView");
+                $main->init();
+            });
+            $content->router->bind("POST", "/register/submit", function (){
+                $main = new AuthenticationController();
+                $main->bindModel("Models/AuthenticationModel");
+                $main->bindView("Views/RegisterView");
+                $main->init();
+                $main->RegisterUser();
+            });
+            $content->router->bind("POST", "/login/submit", function (){
+                $main = new AuthenticationController();
+                $main->bindModel("Models/AuthenticationModel");
+                $main->bindView("Views/LoginView");
+                $main->init();
+                $main->LoginUser();
+            });
+            $content->router->bind("GET", "/logout", function (){
+                echo "Wylogowano pomyślnie";
+            });
             $content->apply();
-
         ?>
     </div>
   </article>

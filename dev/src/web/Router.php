@@ -9,7 +9,7 @@ class Router
     protected $default;
     public function __construct()
     {
-        $default = function(){};
+        $this->default = function(){};
     }
 
     public function bind($method, $path, $callback){
@@ -19,6 +19,11 @@ class Router
         $this->default = $callback;
     }
     public function getCurrent(){
-        echo call_user_func($this->ruleset[$_SERVER["REQUEST_METHOD"]][Utility::getPath($_SERVER["REQUEST_URI"])]??$this->default);
+        if(@$this->ruleset[$_SERVER["REQUEST_METHOD"]][Utility::getPath($_SERVER["REQUEST_URI"])] != null){
+            echo call_user_func($this->ruleset[$_SERVER["REQUEST_METHOD"]][Utility::getPath($_SERVER["REQUEST_URI"])]??$this->default);
+        }else{
+            echo call_user_func($this->default);
+        }
+
     }
 }
