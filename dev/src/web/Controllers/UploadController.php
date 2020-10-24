@@ -51,6 +51,12 @@ class UploadController extends Controller
 
     }
     public function validate(){
+        if($_POST["photoTitle"] == null)
+            return "Title cant be empty";
+        if($_POST["author"] == null)
+            return "Author cant be empty";
+        if($_POST["watermark"] == null)
+            return "Watermark cant be empty";
         if($_FILES['file']['size']>1048576)
             return "File is too large";
         if($_FILES['file']['type'] != 'image/png' && $_FILES['file']['type'] != 'image/jpeg')

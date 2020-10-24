@@ -3,6 +3,8 @@
 
 class GalleryModel extends Model
 {
+    public static $imagesOnPage = 5;
+
 
     public $thumbnails = [];
     public $photos = [];
@@ -30,10 +32,9 @@ class GalleryModel extends Model
             }
         }
 
-
-        $this->parent->view->authors = $this->authors;
-        $this->parent->view->titles = $this->titles;
-        $this->parent->view->thumbnails = $this->thumbnails;
-        $this->parent->view->photos = $this->photos;
+        $this->setParam("authors", $this->authors);
+        $this->setParam("titles", $this->titles);
+        $this->setParam("thumbnails", $this->thumbnails);
+        $this->setParam("photos", $this->photos);
     }
 }
