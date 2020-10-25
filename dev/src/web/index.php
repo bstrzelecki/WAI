@@ -1,5 +1,7 @@
 <?php
       session_start();
+
+
       require "Manifest.php";
       require "Context.php";
       require "Controllers/PlainTextDisplayController.php";
@@ -114,6 +116,26 @@
             $content->router->bind("GET", "/gallery", function (){
                 $main = new GalleryController();
                 $main->bindModel("Models/GalleryModel");
+                $main->bindView("Views/GalleryView");
+                $main->init();
+            });
+            $content->router->bind("POST", "/gallery/save", function (){
+                $main = new GalleryController();
+                $main->handleSave();
+                $main->bindModel("Models/GalleryModel");
+                $main->bindView("Views/GalleryView");
+                $main->init();
+            });
+            $content->router->bind("GET", "/gallery/saved", function (){
+                $main = new GalleryController();
+                $main->bindModel("Models/SavedModel");
+                $main->bindView("Views/GalleryView");
+                $main->init();
+            });
+            $content->router->bind("POST", "/gallery/remove", function (){
+                $main = new GalleryController();
+                $main->handleRemove();
+                $main->bindModel("Models/SavedModel");
                 $main->bindView("Views/GalleryView");
                 $main->init();
             });

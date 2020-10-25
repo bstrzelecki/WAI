@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,22 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="541f8066-abcc-4674-8f1d-ecc52cf39d12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PhotoSaver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/[M]5f942a1266e6f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/[M]5f942c417ce57" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/[M]5f942cd6dccac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/[S]5f942a1266e6f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/[S]5f942c417ce57" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/[S]5f942cd6dccac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/[W]5f942a1266e6f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/[W]5f942c417ce57" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/[W]5f942cd6dccac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/SavedModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/UploadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GalleryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/GalleryModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/GalleryModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/UploadModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UploadModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/GalleryView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/GalleryView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/UploadView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UploadView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/UserStateView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UserStateView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +114,8 @@
       <workItem from="1603277847937" duration="47000" />
       <workItem from="1603277933181" duration="20372000" />
       <workItem from="1603463823624" duration="12129000" />
-      <workItem from="1603530640663" duration="15606000" />
+      <workItem from="1603530640663" duration="15938000" />
+      <workItem from="1603645368846" duration="12170000" />
     </task>
     <servers />
   </component>
@@ -145,10 +141,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1603542093121">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1603651958352">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603306910678" />
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603651958352" />
     <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1603542093121" />
     <state x="773" y="299" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603535019235">
       <screen x="0" y="30" width="1920" height="1050" />
@@ -158,10 +154,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="707" y="410" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1920.1050@0.30.1920.1050" timestamp="1603538384664" />
-    <state x="757" y="278" key="NewPhpClassDialog" timestamp="1603542681964">
+    <state x="757" y="278" key="NewPhpClassDialog" timestamp="1603651947990">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="757" y="278" key="NewPhpClassDialog/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603306880719" />
+    <state x="757" y="278" key="NewPhpClassDialog/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603651947990" />
     <state x="757" y="278" key="NewPhpClassDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1603542681964" />
     <state x="794" y="478" key="NewPhpFileDialog" timestamp="1603552270981">
       <screen x="0" y="30" width="1920" height="1050" />
@@ -177,10 +173,10 @@
     </state>
     <state x="616" y="258" key="run.anything.popup/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603302930809" />
     <state x="616" y="258" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1603474647725" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1603542708596">
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1603645547840">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603295629850" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603645547840" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1603542708596" />
   </component>
 </project>

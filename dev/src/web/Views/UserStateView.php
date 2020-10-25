@@ -8,6 +8,11 @@ class UserStateView extends View
     {
         if($this->getParam("isLoggedIn")){
             echo <<<EOT
+         <a href="gallery/saved">
+          <div class="nav-option">
+              Wybrane
+          </div>
+        </a>
         <a href="logout">
           <div class="nav-option">
               Wyloguj się

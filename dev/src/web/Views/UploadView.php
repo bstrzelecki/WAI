@@ -6,6 +6,16 @@ class UploadView  extends View
 
     public function render()
     {
+        $radios = "";
+        if(isset($_SESSION["key"])){
+            $radios = <<<RDO
+<label for="public">Publiczny</label>
+<input type="radio" name="visibility" id="public" value="public"/>
+<label for="private">Prywatny</label>
+<input type="radio" name="visibility" id="private" value="private"/>
+RDO;
+
+        }
         echo <<<FRM
             <div>
                 <form enctype="multipart/form-data" action="/gallery/upload" method="POST">
@@ -18,6 +28,8 @@ class UploadView  extends View
                     
                     <label for="watermark">Znak wodny:</label>
                     <input type="text" id="watermark" name="watermark" required/>
+                    
+                    {$radios}
                     
                     <label for="fileInput">Wybierz plik:</label>
                     <input type="hidden" name="MAX_FILE_SIZE" value="1048576">
