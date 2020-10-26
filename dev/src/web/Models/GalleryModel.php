@@ -11,6 +11,7 @@ class GalleryModel extends Model
     public $titles = [];
     public $authors = [];
     public $selected = [];
+
     public function init()
     {
         $this->setParam("mode", "save");
@@ -19,20 +20,20 @@ class GalleryModel extends Model
         $pi = 0;
         $db = Manifest::getDatabaseAdapter();
 
-        foreach ($files as $file){
-            if($file == "." || $file == "..")continue;
-            if($file[1] == 'W'){
+        foreach ($files as $file) {
+            if ($file == "." || $file == "..") continue;
+            if ($file[1] == 'W') {
                 $this->photos[$pi] = $file;
                 $pi++;
             }
-            if($file[1] == 'M'){
-                $data =  $db->getPhoto(substr($file, 3));
-                if(isset($data["visibleBy"]) && $data["visibleBy"] != $_SESSION["key"])
+            if ($file[1] == 'M') {
+                $data = $db->getPhoto(substr($file, 3));
+                if (isset($data["visibleBy"]) && $data["visibleBy"] != $_SESSION["key"])
                     continue;
                 $this->thumbnails[$ti] = $file;
-                $this->selected[$ti] = @in_array($this->thumbnails[$ti],@$_SESSION["page".(int)($ti/GalleryModel::$imagesOnPage)])?"checked":"";
+                $this->selected[$ti] = @in_array($this->thumbnails[$ti], @$_SESSION["page" . (int)($ti / GalleryModel::$imagesOnPage)]) ? "checked" : "";
                 $this->titles[$ti] = $data["title"];
-                $this->authors[$ti] = $data["author"].(isset($data["visibleBy"])?" [P]":"");
+                $this->authors[$ti] = $data["author"] . (isset($data["visibleBy"]) ? " [P]" : "");
                 $ti++;
             }
         }

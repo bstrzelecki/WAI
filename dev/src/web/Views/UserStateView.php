@@ -6,7 +6,7 @@ class UserStateView extends View
 
     public function render()
     {
-        if($this->getParam("isLoggedIn")){
+        if ($this->getParam("isLoggedIn")) {
             echo <<<EOT
          <a href="gallery/saved">
           <div class="nav-option">
@@ -19,7 +19,7 @@ class UserStateView extends View
           </div>
         </a>
 EOT;
-        }else{
+        } else {
             echo <<<EOT
         <a href="login">
           <div class="nav-option">

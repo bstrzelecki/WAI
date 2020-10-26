@@ -2,10 +2,13 @@
 
 class Utility
 {
-    public static function getPath($uri){
+    public static function getPath($uri)
+    {
         return explode('?', $uri)[0];
     }
-    public static function getGUID(){
+
+    public static function getGUID()
+    {
         return uniqid();
     }
 }

@@ -1,13 +1,13 @@
 <?php
 
 
-class UploadView  extends View
+class UploadView extends View
 {
 
     public function render()
     {
         $radios = "";
-        if(isset($_SESSION["key"])){
+        if (isset($_SESSION["key"])) {
             $radios = <<<RDO
 <label for="public">Publiczny</label>
 <input type="radio" name="visibility" id="public" value="public" checked/>

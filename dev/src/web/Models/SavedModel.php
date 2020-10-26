@@ -7,6 +7,7 @@ class SavedModel extends Model
     public $photos = [];
     public $titles = [];
     public $authors = [];
+
     public function init()
     {
         $this->setParam("mode", "remove");
@@ -14,21 +15,21 @@ class SavedModel extends Model
         $ti = 0;
         $pi = 0;
         $db = Manifest::getDatabaseAdapter();
-        foreach ($files as $file){
-            if($file == "." || $file == "..")continue;
-            if($file[1] == 'W'){
+        foreach ($files as $file) {
+            if ($file == "." || $file == "..") continue;
+            if ($file[1] == 'W') {
                 $this->photos[$pi] = $file;
                 $pi++;
             }
-            if($file[1] == 'M'){
+            if ($file[1] == 'M') {
 
                 $continueFlag = true;
-                for($i = 0; $i <= @$_SESSION["pages"]; $i++){
-                    $pageStr = "page".$i;
-                    if(array_key_exists($pageStr, $_SESSION) && in_array($file,@$_SESSION[$pageStr]))
+                for ($i = 0; $i <= @$_SESSION["pages"]; $i++) {
+                    $pageStr = "page" . $i;
+                    if (array_key_exists($pageStr, $_SESSION) && in_array($file, @$_SESSION[$pageStr]))
                         $continueFlag = false;
                 }
-                if($continueFlag)
+                if ($continueFlag)
                     continue;
                 $this->thumbnails[$ti] = $file;
                 $data = $db->getPhoto(substr($file, 3));

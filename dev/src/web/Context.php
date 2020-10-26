@@ -10,7 +10,8 @@ class Context
         $this->router = new Router();
     }
 
-    public function apply(){
+    public function apply()
+    {
         $this->router->getCurrent();
     }
 }
