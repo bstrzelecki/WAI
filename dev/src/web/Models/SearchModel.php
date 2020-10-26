@@ -1,19 +1,15 @@
 <?php
 
 
-class GalleryModel extends Model
+class SearchModel extends Model
 {
-    public static $imagesOnPage = 5;
-
-
     public $thumbnails = [];
     public $photos = [];
     public $titles = [];
     public $authors = [];
-    public $selected = [];
     public function init()
     {
-        $this->setParam("mode", "save");
+        $this->setParam("mode", "search");
         $files = scandir("/var/www/dev/src/web/images");
         $ti = 0;
         $pi = 0;
@@ -27,16 +23,16 @@ class GalleryModel extends Model
             }
             if($file[1] == 'M'){
                 $data =  $db->getPhoto(substr($file, 3));
-                if(isset($data["visibleBy"]) && $data["visibleBy"] != $_SESSION["key"])
+                if(isset($data["visibleBy"]))
+                    continue;
+                if(strpos($data["title"],$_GET["value"])===false)
                     continue;
                 $this->thumbnails[$ti] = $file;
-                $this->selected[$ti] = @in_array($this->thumbnails[$ti],@$_SESSION["page".(int)($ti/GalleryModel::$imagesOnPage)])?"checked":"";
                 $this->titles[$ti] = $data["title"];
-                $this->authors[$ti] = $data["author"].(isset($data["visibleBy"])?" [P]":"");
+                $this->authors[$ti] = $data["author"];
                 $ti++;
             }
         }
-        $this->setParam("selected", $this->selected);
         $this->setParam("authors", $this->authors);
         $this->setParam("titles", $this->titles);
         $this->setParam("thumbnails", $this->thumbnails);

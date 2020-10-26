@@ -10,10 +10,10 @@ class AuthenticationController extends Controller
         $repwd = $_POST["repassword"];
 
         if(!$this->Validate($login, $email, $password, $repwd))return;
-        echo "Attempting user registration";
+
         $db = Manifest::getDatabaseAdapter();
         $db->addUser($login, $email, $password);
-        echo "Database entry created";
+        echo "Zarejestrowano pomyślnie";
     }
     public function LoginUser(){
         $login = $_POST["login"];
@@ -22,26 +22,30 @@ class AuthenticationController extends Controller
         $db = Manifest::getDatabaseAdapter();
         $key = $db->getSessionKey($login, $password);
         if($key == null){
-            echo "Username or password is invalid";
+            echo "Nazwa urzytkownika lub hasło jest niepoprawne";
         }
         else{
             $_SESSION["key"] = $key;
-            echo "Logged in successfully";
+            echo "Zalogowano pomyślnie";
         }
     }
     protected function Validate($login ,$email, $password, $repwd){
         $isValid = true;
+        if($login == "" || $email == "" || $password == "" || $repwd == ""){
+            echo "Pola nie mogą być puste";
+            $isValid = false;
+        }
         if($password != $repwd){
-            echo "Passwords do not match";
+            echo "Hasło nie są te same";
             $isValid = false;
         }
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            echo "Invalid email format";
+            echo "Zły format adresu";
             $isValid = false;
         }
         $db = Manifest::getDatabaseAdapter();
         if(!$db->isLoginAvailable($login)){
-            echo "Login is already taken";
+            echo "Login jest już w użyciu";
             $isValid = false;
         }
 

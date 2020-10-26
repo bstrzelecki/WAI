@@ -47,7 +47,12 @@ class UploadController extends Controller
         }
 
         $db = Manifest::getDatabaseAdapter();
-        $db->pushPhoto($guid, $_POST["photoTitle"], $_POST["author"]);
+        if(isset($_POST["visibility"]) && $_POST["visibility"]=="private"){
+            $db->pushPrivatePhoto($guid, $_POST["photoTitle"], $_POST["author"], $_SESSION["key"]);
+        }else{
+            $db->pushPhoto($guid, $_POST["photoTitle"], $_POST["author"]);
+        }
+
 
     }
     public function validate(){

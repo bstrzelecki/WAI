@@ -9,6 +9,7 @@
       require "Controllers/GalleryController.php";
       require "Controllers/UserStateController.php";
       require "Controllers/AuthenticationController.php";
+      require "Controllers/SearchController.php";
 
       $sessionCtrl = new Context();
       $sessionCtrl->router->bind("GET", "/logout", function (){
@@ -57,6 +58,11 @@
         <a href="gallery">
           <div class="nav-option">
             Galeria
+          </div>
+        </a>
+          <a href="gallery/search">
+          <div class="nav-option">
+            Wyszukiwarka
           </div>
         </a>
       </div>
@@ -164,6 +170,12 @@
                 $main->bindView("Views/LoginView");
                 $main->init();
                 $main->LoginUser();
+            });
+            $content->router->bind("GET", "/gallery/search", function (){
+                $main = new SearchController();
+                $main->bindModel("Models/MainModel");
+                $main->bindView("Views/SearchView");
+                $main->init();
             });
             $content->router->bind("GET", "/logout", function (){
                 echo "Wylogowano pomyślnie";

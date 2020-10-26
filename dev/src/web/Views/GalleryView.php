@@ -21,7 +21,7 @@ class GalleryView extends View
     <figure>
        <a href="images/{$photos[$i]}"><img src="images/{$thumbnails[$i]}"/></a>
        <figcaption>{$titles[$i]} by {$authors[$i]}</figcaption>
-    </figure><input type="checkbox" name="selected[]" value="{$thumbnails[$i]}" {$selected[$i]}/>
+    <input type="checkbox" name="selected[]" value="{$thumbnails[$i]}" {$selected[$i]}/></figure>
 EOT;
         }
         error_reporting(-1);
@@ -31,7 +31,7 @@ EOT;
         $previousPage = $page - 1;
         $nextPage = $page+1;
         $buttonValue = $this->getParam("mode")=="save"?"Zapamiętaj wybrane":"Usuń z wybranych";
-        if(count($thumbnails)>0)
+        if(count($thumbnails)>0 && $this->getParam("mode")!="search")
             $out .= "<input type='submit' value='$buttonValue' {$isLoggedIn}></form>";
 
         if($previousPage >= 0){
@@ -41,6 +41,7 @@ EOT;
         {
             $out .= "<a href='/gallery?page={$nextPage}'>Następna strona</a>";
         }
+
 
         echo $out;
     }

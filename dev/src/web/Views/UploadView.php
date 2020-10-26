@@ -10,7 +10,7 @@ class UploadView  extends View
         if(isset($_SESSION["key"])){
             $radios = <<<RDO
 <label for="public">Publiczny</label>
-<input type="radio" name="visibility" id="public" value="public"/>
+<input type="radio" name="visibility" id="public" value="public" checked/>
 <label for="private">Prywatny</label>
 <input type="radio" name="visibility" id="private" value="private"/>
 RDO;

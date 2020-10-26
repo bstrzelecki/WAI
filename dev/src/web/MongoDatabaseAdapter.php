@@ -13,6 +13,10 @@ class MongoDatabaseAdapter
         $entry = ["_id"=>$id, "title"=>$title, "author"=>$author];
         $this->db->photos->insertOne($entry);
     }
+    public function pushPrivatePhoto($id, $title, $author, $visibleBy){
+        $entry = ["_id"=>$id, "title"=>$title, "author"=>$author, "visibleBy" => $visibleBy];
+        $this->db->photos->insertOne($entry);
+    }
     public function getPhoto($id){
         $query = ["_id"=>$id];
         return $this->db->photos->findOne($query);
