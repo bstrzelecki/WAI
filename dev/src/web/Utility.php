@@ -7,7 +7,7 @@ class Utility
         return explode('?', $uri)[0];
     }
 
-    public static function getGUID()
+    public static function getUID()
     {
         return uniqid();
     }

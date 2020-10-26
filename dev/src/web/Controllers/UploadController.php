@@ -1,14 +1,15 @@
 <?php
 
 require "MongoDatabaseAdapter.php";
+include_once "Controller.php";
 
 class UploadController extends Controller
 {
     public function handleFileUpload()
     {
         $uploadLocation = getcwd() . "/images/";
-        $guid = Utility::getGUID();
-        $fileName = $guid;
+        $uid = Utility::getUID();
+        $fileName = $uid;
 
         if (($output = $this->validate()) != "OK") {
             echo $output;
@@ -28,29 +29,23 @@ class UploadController extends Controller
         imagestring($image, 64, 0, 0, $_POST["watermark"], imagecolorallocate($image, 255, 0, 0));
 
 
-        if (imagepng($image, $uploadLocation . "[W]" . $fileName, 0)) {
-            echo "File watermarked successfully";
-        } else {
+        if (!imagepng($image, $uploadLocation . "[W]" . $fileName, 0)) {
             echo "Possible error";
         }
-        if (imagepng($small, $uploadLocation . "[M]" . $fileName, 0)) {
-            echo "File watermarked successfully";
-        } else {
+        if (!imagepng($small, $uploadLocation . "[M]" . $fileName, 0)) {
             echo "Possible error";
         }
 
 
-        if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadLocation . "[S]" . $fileName)) {
-            echo "File uploaded successfully";
-        } else {
+        if (!move_uploaded_file($_FILES['file']['tmp_name'], $uploadLocation . "[S]" . $fileName)) {
             echo "Possible error";
         }
 
         $db = Manifest::getDatabaseAdapter();
         if (isset($_POST["visibility"]) && $_POST["visibility"] == "private") {
-            $db->pushPrivatePhoto($guid, $_POST["photoTitle"], $_POST["author"], $_SESSION["key"]);
+            $db->pushPrivatePhoto($uid, $_POST["photoTitle"], $_POST["author"], $_SESSION["key"]);
         } else {
-            $db->pushPhoto($guid, $_POST["photoTitle"], $_POST["author"]);
+            $db->pushPhoto($uid, $_POST["photoTitle"], $_POST["author"]);
         }
 
 
@@ -59,15 +54,15 @@ class UploadController extends Controller
     public function validate()
     {
         if ($_POST["photoTitle"] == null)
-            return "Title cant be empty";
+            return "Tytuł nie może być pusty";
         if ($_POST["author"] == null)
-            return "Author cant be empty";
+            return "Autor nie może być pusty";
         if ($_POST["watermark"] == null)
-            return "Watermark cant be empty";
+            return "Znak wodny nie może być pusty";
         if ($_FILES['file']['size'] > 1048576)
-            return "File is too large";
+            return "Plik jest zbyt duży";
         if ($_FILES['file']['type'] != 'image/png' && $_FILES['file']['type'] != 'image/jpeg')
-            return "File is of wrong type";
+            return "Plik jest złego typu";
         return "OK";
     }
 }

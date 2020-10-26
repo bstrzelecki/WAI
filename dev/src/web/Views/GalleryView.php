@@ -19,7 +19,7 @@ class GalleryView extends View
         for ($i = GalleryModel::$imagesOnPage * $page; $i < min(GalleryModel::$imagesOnPage + GalleryModel::$imagesOnPage * $page, count($thumbnails)); $i++) {
             $out .= <<<EOT
     <figure>
-       <a href="images/{$photos[$i]}"><img src="images/{$thumbnails[$i]}"/></a>
+       <a href="images/{$photos[$i]}"><img src="images/{$thumbnails[$i]}" alt="image"/></a>
        <figcaption>{$titles[$i]} by {$authors[$i]}</figcaption>
     <input type="checkbox" name="selected[]" value="{$thumbnails[$i]}" {$selected[$i]}/></figure>
 EOT;
@@ -35,10 +35,10 @@ EOT;
             $out .= "<input type='submit' value='$buttonValue' {$isLoggedIn}></form>";
 
         if ($previousPage >= 0) {
-            $out .= "<a href='/gallery?page={$previousPage}'>Poprzednia strona</a>";
+            $out .= "<a class='btn' href='/gallery?page={$previousPage}'>Poprzednia strona</a>";
         }
         if ($nextPage < count($thumbnails) / GalleryModel::$imagesOnPage) {
-            $out .= "<a href='/gallery?page={$nextPage}'>Następna strona</a>";
+            $out .= "<a class='btn' href='/gallery?page={$nextPage}'>Następna strona</a>";
         }
 
 

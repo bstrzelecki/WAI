@@ -11,6 +11,10 @@ class Controller
     {
         $this->model = $this->get($model);
     }
+    public function bindView($view)
+    {
+        $this->view = $this->get($view);
+    }
 
     private function get($obj)
     {
@@ -27,10 +31,7 @@ class Controller
         }
     }
 
-    public function bindView($view)
-    {
-        $this->view = $this->get($view);
-    }
+
 
     public function init()
     {

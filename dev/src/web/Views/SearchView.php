@@ -22,9 +22,10 @@ class SearchView extends View
                 request.send();
             }
         }
-</script>
+        </script>
         
-        <input onkeyup="updateGallery(this.value)">
+        <label for="search">Wyszukaj</label>
+        <input onkeyup="updateGallery(this.value)" id="search" class="text-box"/>
         <div id="gallery"></div>
 
 EOT;

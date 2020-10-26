@@ -23,31 +23,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="541f8066-abcc-4674-8f1d-ecc52cf39d12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Context.php" beforeDir="false" afterPath="$PROJECT_DIR$/Context.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/AuthenticationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AuthenticationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DefaultModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StateMachinesDefinitions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GalleryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/PlainTextDisplayController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/SearchController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/UploadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Manifest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Manifest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/GalleryModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/GalleryModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/UserStateController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/AuthenticationModel.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/SavedModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/SavedModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/SearchModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/SearchModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/UploadModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UploadModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/UserStateModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UserStateModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MongoDatabaseAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/MongoDatabaseAdapter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utility.php" beforeDir="false" afterPath="$PROJECT_DIR$/Utility.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/GalleryView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/GalleryView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/MainView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/MainView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/LoginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/LoginView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/RegisterView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/RegisterView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/SearchView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/SearchView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/UploadView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UploadView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/UserStateView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UserStateView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[M]5f931e6a06f0brussia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[M]5f931ea42db9b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[M]5f932c1cb7710" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[M]5f942a1266e6f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[M]5f942c417ce57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[M]5f942cd6dccac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[M]5f97045e25630" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[M]5f9707a78200d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[M]5f9707db03cfa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[S]5f931e6a06f0brussia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[S]5f931ea42db9b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[S]5f932c1cb7710" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[S]5f942a1266e6f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[S]5f942c417ce57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[S]5f942cd6dccac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[S]5f97045e25630" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[S]5f9707a78200d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[S]5f9707db03cfa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[W]5f931e6a06f0brussia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[W]5f931ea42db9b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[W]5f932c1cb7710" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[W]5f942a1266e6f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[W]5f942c417ce57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[W]5f942cd6dccac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[W]5f97045e25630" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[W]5f9707a78200d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/[W]5f9707db03cfa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/places.html" beforeDir="false" afterPath="$PROJECT_DIR$/places.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/places.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +159,7 @@
       <workItem from="1603463823624" duration="12129000" />
       <workItem from="1603530640663" duration="15938000" />
       <workItem from="1603645368846" duration="12277000" />
-      <workItem from="1603708296761" duration="9562000" />
+      <workItem from="1603708296761" duration="14667000" />
     </task>
     <servers />
   </component>
@@ -170,15 +195,24 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="773" y="299" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1603535019235" />
-    <state x="707" y="410" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603538384664">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="3187" y="-450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603750043065">
+      <screen x="1920" y="-1046" width="3072" height="1698" />
     </state>
+    <state x="3187" y="-450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1920.1050/1920.-1046.3072.1698@1920.-1046.3072.1698" timestamp="1603750043065" />
+    <state x="3341" y="-422" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#function0" timestamp="1603750803488">
+      <screen x="1920" y="-1046" width="3072" height="1698" />
+    </state>
+    <state x="3341" y="-422" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#function0/0.30.1920.1050/1920.-1046.3072.1698@1920.-1046.3072.1698" timestamp="1603750803488" />
+    <state x="3051" y="-431" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603745532416">
+      <screen x="1920" y="-1046" width="3072" height="1698" />
+    </state>
+    <state x="3051" y="-431" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1920.1050/1920.-1046.3072.1698@1920.-1046.3072.1698" timestamp="1603745532416" />
     <state x="707" y="410" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1920.1050@0.30.1920.1050" timestamp="1603538384664" />
-    <state x="3131" y="-645" key="NewPhpClassDialog" timestamp="1603734644442">
+    <state x="3131" y="-645" key="NewPhpClassDialog" timestamp="1603750674748">
       <screen x="1920" y="-1046" width="3072" height="1698" />
     </state>
     <state x="757" y="278" key="NewPhpClassDialog/0.30.1920.1050/1920.-1046.3072.1698@0.30.1920.1050" timestamp="1603651947990" />
-    <state x="3131" y="-645" key="NewPhpClassDialog/0.30.1920.1050/1920.-1046.3072.1698@1920.-1046.3072.1698" timestamp="1603734644442" />
+    <state x="3131" y="-645" key="NewPhpClassDialog/0.30.1920.1050/1920.-1046.3072.1698@1920.-1046.3072.1698" timestamp="1603750674748" />
     <state x="757" y="278" key="NewPhpClassDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1603542681964" />
     <state x="3190" y="-322" key="NewPhpFileDialog" timestamp="1603735119008">
       <screen x="1920" y="-1046" width="3072" height="1698" />

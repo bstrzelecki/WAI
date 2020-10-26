@@ -17,19 +17,14 @@ class SavedModel extends Model
         $db = Manifest::getDatabaseAdapter();
         foreach ($files as $file) {
             if ($file == "." || $file == "..") continue;
+
             if ($file[1] == 'W') {
                 $this->photos[$pi] = $file;
                 $pi++;
             }
-            if ($file[1] == 'M') {
 
-                $continueFlag = true;
-                for ($i = 0; $i <= @$_SESSION["pages"]; $i++) {
-                    $pageStr = "page" . $i;
-                    if (array_key_exists($pageStr, $_SESSION) && in_array($file, @$_SESSION[$pageStr]))
-                        $continueFlag = false;
-                }
-                if ($continueFlag)
+            if ($file[1] == 'M') {
+                if (!$this->isSaved($file))
                     continue;
                 $this->thumbnails[$ti] = $file;
                 $data = $db->getPhoto(substr($file, 3));
@@ -42,5 +37,13 @@ class SavedModel extends Model
         $this->setParam("titles", $this->titles);
         $this->setParam("thumbnails", $this->thumbnails);
         $this->setParam("photos", $this->photos);
+    }
+    private function isSaved($file){
+        for ($i = 0; $i <= @$_SESSION["pages"]; $i++) {
+            $pageStr = "page" . $i;
+            if (array_key_exists($pageStr, $_SESSION) && in_array($file, @$_SESSION[$pageStr]))
+                return true;
+        }
+        return false;
     }
 }

@@ -14,9 +14,6 @@ class GalleryController extends Controller
 
     public function handleRemove()
     {
-        var_dump($_POST["selected"]);
-        echo "-----------";
-        var_dump($_SESSION);
         for ($i = 0; $i <= $_SESSION["pages"]; $i++) {
             $pageStr = "page" . $i;
             $_SESSION[$pageStr] = array_diff($_SESSION[$pageStr], $_POST["selected"]);

@@ -1,15 +1,12 @@
 <?php
 session_start();
 
-
 require "Manifest.php";
 require "Context.php";
-require "Controllers/PlainTextDisplayController.php";
+include "StateMachinesDefinitions.php";
 require "Controllers/UploadController.php";
 require "Controllers/GalleryController.php";
-require "Controllers/UserStateController.php";
 require "Controllers/AuthenticationController.php";
-require "Controllers/SearchController.php";
 
 $sessionCtrl = new Context();
 $sessionCtrl->router->bind("GET", "/logout", function () {
@@ -66,34 +63,21 @@ $sessionCtrl->apply();
                         Wyszukiwarka
                     </div>
                 </a>
+                <?php
+                $auth = new Context();
+                $auth->router->bind("POST", "/login/submit", function () {});
+                $auth->router->any(function () {
+                    $btns = new Controller();
+                    $btns->bindModel("Models/UserStateModel");
+                    $btns->bindView("Views/UserStateView");
+                    $btns->init();
+                });
+                $auth->apply();
+                ?>
             </div>
-
-            <?php
-            $auth = new Context();
-            $auth->router->bind("POST", "/login/submit", function () {
-            });
-            $auth->router->any(function () {
-                $btns = new UserStateController();
-                $btns->bindModel("Models/UserStateModel");
-                $btns->bindView("Views/UserStateView");
-                $btns->init();
-            });
-            $auth->apply();
-            ?>
-
             <app-notepad></app-notepad>
             <?php
-            $left = new Context();
-            $left->router->bind("GET", "/gallery", function () {
-                $form = new UploadController();
-                $form->bindView("Views/UploadView");
-                $form->bindModel("Models/UploadModel");
-                $form->init();
-            });
-            $left->router->bind("POST", "/gallery/upload", function () {
-                $form = new UploadController();
-                $form->handleFileUpload();
-            });
+            $left = StateMachinesDefinitions::getLeftPanelContext();
             $left->apply();
             ?>
         </div>
@@ -102,86 +86,7 @@ $sessionCtrl->apply();
     <article>
         <div id="content">
             <?php
-            $content = new Context();
-            $content->router->bind("GET", "/", function () {
-                $main = new PlainTextDisplayController();
-                $main->bindModel("Models/MainModel");
-                $main->bindView("Views/MainView");
-                $main->init();
-            });
-            $content->router->bind("GET", "/events", function () {
-                $main = new PlainTextDisplayController();
-                $main->bindModel("Models/EventModel");
-                $main->bindView("Views/MainView");
-                $main->init();
-            });
-            $content->router->bind("GET", "/places", function () {
-                $main = new PlainTextDisplayController();
-                $main->bindModel("Models/PlacesModel");
-                $main->bindView("Views/MainView");
-                $main->init();
-            });
-            $content->router->bind("GET", "/gallery", function () {
-                $main = new GalleryController();
-                $main->bindModel("Models/GalleryModel");
-                $main->bindView("Views/GalleryView");
-                $main->init();
-            });
-            $content->router->bind("POST", "/gallery/save", function () {
-                $main = new GalleryController();
-                $main->handleSave();
-                $main->bindModel("Models/GalleryModel");
-                $main->bindView("Views/GalleryView");
-                $main->init();
-            });
-            $content->router->bind("GET", "/gallery/saved", function () {
-                $main = new GalleryController();
-                $main->bindModel("Models/SavedModel");
-                $main->bindView("Views/GalleryView");
-                $main->init();
-            });
-            $content->router->bind("POST", "/gallery/remove", function () {
-                $main = new GalleryController();
-                $main->handleRemove();
-                $main->bindModel("Models/SavedModel");
-                $main->bindView("Views/GalleryView");
-                $main->init();
-            });
-            $content->router->bind("GET", "/register", function () {
-                $main = new AuthenticationController();
-                $main->bindModel("Models/AuthenticationModel");
-                $main->bindView("Views/RegisterView");
-                $main->init();
-            });
-            $content->router->bind("GET", "/login", function () {
-                $main = new AuthenticationController();
-                $main->bindModel("Models/AuthenticationModel");
-                $main->bindView("Views/LoginView");
-                $main->init();
-            });
-            $content->router->bind("POST", "/register/submit", function () {
-                $main = new AuthenticationController();
-                $main->bindModel("Models/AuthenticationModel");
-                $main->bindView("Views/RegisterView");
-                $main->init();
-                $main->RegisterUser();
-            });
-            $content->router->bind("POST", "/login/submit", function () {
-                $main = new AuthenticationController();
-                $main->bindModel("Models/AuthenticationModel");
-                $main->bindView("Views/LoginView");
-                $main->init();
-                $main->LoginUser();
-            });
-            $content->router->bind("GET", "/gallery/search", function () {
-                $main = new SearchController();
-                $main->bindModel("Models/MainModel");
-                $main->bindView("Views/SearchView");
-                $main->init();
-            });
-            $content->router->bind("GET", "/logout", function () {
-                echo "Wylogowano pomyślnie";
-            });
+            $content = StateMachinesDefinitions::getContentContext();
             $content->apply();
             ?>
         </div>

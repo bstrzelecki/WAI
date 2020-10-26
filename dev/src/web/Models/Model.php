@@ -1,7 +1,7 @@
 <?php
 
 
-abstract class Model
+class Model
 {
     public $parent;
 
@@ -10,5 +10,5 @@ abstract class Model
         $this->parent->view->params[$name] = $data;
     }
 
-    public abstract function init();
+    public function init(){}
 }
